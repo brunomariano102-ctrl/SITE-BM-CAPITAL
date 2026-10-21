@@ -208,7 +208,7 @@ for (const marketing of [false, true]) {
     expect(url.searchParams.get("text")).toContain("Meu nome é João & Ana.");
     expect(url.searchParams.get("text")).toContain("Conquistar um imóvel");
     expect(url.searchParams.get("text")).toContain("Nos próximos 3 meses");
-    expect(url.searchParams.get("text")).toContain("versão 2026-10-20");
+    expect(url.searchParams.get("text")).toContain("versão 2026-10-21");
     expect(url.searchParams.get("text")).toContain(
       `opcionais: ${marketing ? "AUTORIZO" : "NÃO AUTORIZO"}.`,
     );

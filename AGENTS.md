@@ -79,4 +79,6 @@ A suíte requer build atualizado e porta 3000 livre, inicia seu próprio servido
 - A entrega está no GitHub na branch `entrega-windows`. O envio de código foi autorizado separadamente da publicação do site.
 - Após executar no Windows, o usuário informou: “Conseguir. Esta tudo aprovado e rodando, pode avançar para o proximo passo!”. Registre isso como aceite da versão que ele avaliou, sem inferir revisão jurídica, testes iOS/Android, autorização de deploy ou integrações.
 - Etapa atual: preparação final para futura publicação, mantendo o visual aprovado e `noindex`. Veja `docs/PREPARACAO-PUBLICACAO.md` e o relatório da Missão 03.
-- Domínio definitivo e informações jurídicas precisam ser fornecidos/confirmados pelo responsável antes de configurar URLs definitivas ou substituir o aviso preliminar.
+- O domínio planejado informado é `https://www.solucoesbmcapital.com.br`. Razão social e sede estão em `lib/site.ts`, fornecidas pelo responsável; não houve consulta cadastral externa ou configuração DNS.
+- O responsável corrigiu o CNPJ para 45.270.578/0001-04; os dígitos verificadores são válidos e o valor está em `lib/site.ts`. A checagem não comprova situação cadastral. O aviso segue preliminar, versão 2026-10-21, pois a revisão jurídica ainda não foi feita. Consulte a constante em `lib/whatsapp.ts` para a versão atual.
+- Não marque o aviso como definitivo nem declare dados cadastrais validados sem evidência correspondente.

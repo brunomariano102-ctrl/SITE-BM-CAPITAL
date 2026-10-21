@@ -1,4 +1,4 @@
-export const PRIVACY_NOTICE_VERSION = "2026-10-20";
+export const PRIVACY_NOTICE_VERSION = "2026-10-21";
 export const WHATSAPP_NUMBER = "5573999724985";
 
 export type DiagnosisMessage = {

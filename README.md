@@ -64,7 +64,7 @@ Ciência do aviso é obrigatória; marketing é separado, opcional e inicialment
 
 Sem backend, cookies adicionados, armazenamento local ou evidência auditável de consentimento. Sem JavaScript, o botão permanece desativado para evitar submissão GET com dados pessoais na URL do site. A versão do aviso e a escolha de marketing acompanham a mensagem preparada; isso não equivale a um registro estruturado de consentimento.
 
-Continuam pendentes a validação jurídica, razão social/CNPJ, retenção e regras de operadores/compartilhamento, além de teste real em iOS/Android. `noindex, nofollow` foi mantido. Não publicar sem aprovação expressa.
+A identificação da controladora e o domínio planejado foram fornecidos pelo responsável e incorporados à preparação. Continuam pendentes a revisão jurídica, retenção e regras de operadores/compartilhamento, além de teste real em iOS/Android. `noindex, nofollow` foi mantido. Não publicar sem aprovação expressa.
 
 Relatório atual: [RELATORIO-MISSAO-01.md](RELATORIO-MISSAO-01.md). Os relatórios anteriores do ZIP permanecem como histórico e não descrevem o estado técnico desta revisão.
 
@@ -74,4 +74,6 @@ Consulte [RELATORIO-MISSAO-02.md](RELATORIO-MISSAO-02.md) e [CHECKLIST-MISSAO-02
 
 ## Etapa atual — preparação final
 
-O responsável aprovou a versão que executou no Windows. Veja [PREPARACAO-PUBLICACAO.md](docs/PREPARACAO-PUBLICACAO.md) e [RELATORIO-MISSAO-03.md](RELATORIO-MISSAO-03.md) para o aceite registrado, a preparação técnica e as informações jurídicas/domínio ainda pendentes. Essa etapa não publica o site nem retira `noindex`.
+O responsável aprovou a versão que executou no Windows. Veja [PREPARACAO-PUBLICACAO.md](docs/PREPARACAO-PUBLICACAO.md) e [RELATORIO-MISSAO-03.md](RELATORIO-MISSAO-03.md) para o aceite registrado, a preparação técnica e a revisão jurídica e a hospedagem ainda pendentes. Essa etapa não publica o site nem retira `noindex`.
+
+Para revisão jurídica, há um [briefing técnico](docs/BRIEFING-REVISAO-PRIVACIDADE.md) descrevendo o fluxo implementado e as decisões ainda necessárias. Domínio e dados institucionais estão centralizados em `lib/site.ts`; isso não configura DNS nem publica o site.

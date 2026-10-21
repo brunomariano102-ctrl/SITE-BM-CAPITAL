@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "Aviso de Privacidade" };
+import { site } from "../../lib/site";
+import { PRIVACY_NOTICE_VERSION } from "../../lib/whatsapp";
+
+export const metadata: Metadata = {
+  title: "Aviso de Privacidade",
+  description: `Aviso de Privacidade da ${site.legalName}.`,
+  alternates: { canonical: "/privacidade" },
+  openGraph: {
+    title: "Aviso de Privacidade | BM Capital",
+    description: `Aviso de Privacidade da ${site.legalName}.`,
+    url: "/privacidade",
+    locale: "pt_BR",
+    type: "website",
+  },
+};
 export default function Privacidade() {
   return (
     <main
@@ -15,15 +29,13 @@ export default function Privacidade() {
       <a href="/">← Voltar à BM Capital</a>
       <h1>Aviso de Privacidade</h1>
       <p>
-        <strong>Versão:</strong> 20/10/2026. <strong>Status:</strong> aviso
-        preliminar, sujeito à validação jurídica e complementação dos dados
-        cadastrais da controladora antes da publicação.
+        <strong>Versão:</strong> {PRIVACY_NOTICE_VERSION.split("-").reverse().join("/")}. <strong>Status:</strong> aviso
+        preliminar, sujeito à validação jurídica antes da publicação.
       </p>
       <h2>1. Quem trata os dados</h2>
       <p>
-        A BM Capital, com atuação em Jequié, Bahia, é o ponto de contato para o
-        atendimento descrito neste site. A razão social e o CNPJ da entidade
-        controladora devem ser confirmados e incluídos antes da publicação.
+        A {site.legalName}, CNPJ {site.cnpj}, com sede em {site.registeredAddress},
+        é a controladora dos dados do atendimento descrito neste site.
       </p>
       <h2>2. Dados e finalidades</h2>
       <p>

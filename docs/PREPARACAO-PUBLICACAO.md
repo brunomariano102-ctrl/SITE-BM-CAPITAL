@@ -20,10 +20,10 @@ Não se deve inferir desse aceite revisão jurídica, teste em aparelhos especí
 
 | Informação ou decisão | Estado |
 | --- | --- |
-| Domínio definitivo e endereço HTTPS do site | Aguardando responsável |
-| Razão social/nome da entidade controladora e CNPJ aplicável | Aguardando responsável |
-| Endereço institucional e dados destinados à divulgação | Aguardando responsável |
-| Aviso de Privacidade final revisado | Aguardando responsável/jurídico |
+| Domínio definitivo e endereço HTTPS do site | Informado: `https://www.solucoesbmcapital.com.br`; URLs preparadas, sem verificação de registro/DNS |
+| Razão social/nome da entidade controladora e CNPJ aplicável | BM Capital Ltda; CNPJ corrigido pelo responsável para 45.270.578/0001-04, com dígitos verificadores válidos |
+| Endereço institucional e dados destinados à divulgação | Rua José Lins do Rego, nº 32, bairro Pompilio Sampaio, Jequié, Bahia, conforme informado |
+| Aviso de Privacidade final revisado | Responsável confirmou que ainda não recebeu revisão jurídica |
 | Retenção, operadores, compartilhamento e atendimento de direitos | Aguardando definição jurídica/operacional |
 | Gestão da autorização de marketing e revogação | Aguardando definição operacional; sem CRM nesta etapa |
 | Hospedagem e conta de destino | Não selecionadas/configuradas nesta etapa |
@@ -35,7 +35,11 @@ Não preencha esses dados por dedução ou com exemplos no site. Não é necess�
 
 Nesta etapa, as páginas de soluções recebem descrição e Open Graph próprios a partir dos títulos e introduções já aprovados. Não há alteração do conteúdo visível, CSS, logotipo, formulário, cookies, serviços ou dependências.
 
-`noindex, nofollow` permanece ativo. URLs canônicas, sitemap e URLs absolutas de compartilhamento dependem do domínio real; não devem ser configurados com um domínio fictício.
+`noindex, nofollow` permanece ativo. Com o domínio informado, foram configuradas a base HTTPS, as URLs canônicas e Open Graph próprias das sete páginas. Essas URLs são metadados locais e não configuram DNS ou hospedagem. Sitemap e ativação de indexação ficam para a etapa de publicação autorizada.
+
+A identificação da controladora e o endereço foram inseridos no aviso preliminar, sem indicar atendimento presencial nesse endereço. O primeiro CNPJ não passou na checagem de dígitos; após solicitação, o responsável corrigiu para 45.270.578/0001-04. O número corrigido passou na checagem aritmética e foi inserido. Não houve consulta ou certificação cadastral externa.
+
+O aviso foi atualizado para a versão **2026-10-21**, sincronizada com a mensagem WhatsApp por uma única constante. A revisão jurídica e as regras operacionais de retenção/marketing continuam pendentes.
 
 ## Sequência após receber as informações
 

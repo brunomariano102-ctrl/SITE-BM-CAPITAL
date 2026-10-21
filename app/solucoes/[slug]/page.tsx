@@ -74,7 +74,9 @@ export async function generateMetadata({
   return {
     title: item.title,
     description: item.intro,
+    alternates: { canonical: `/solucoes/${slug}` },
     openGraph: {
+      url: `/solucoes/${slug}`,
       title: `${item.title} | BM Capital`,
       description: item.intro,
       locale: "pt_BR",
