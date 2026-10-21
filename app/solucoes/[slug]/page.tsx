@@ -69,8 +69,17 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  if (!Object.hasOwn(solutions, slug)) return { title: "Solução" };
+  const item = solutions[slug];
   return {
-    title: Object.hasOwn(solutions, slug) ? solutions[slug].title : "Solução",
+    title: item.title,
+    description: item.intro,
+    openGraph: {
+      title: `${item.title} | BM Capital`,
+      description: item.intro,
+      locale: "pt_BR",
+      type: "website",
+    },
   };
 }
 export default async function SolutionPage({

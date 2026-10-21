@@ -71,3 +71,7 @@ Relatório atual: [RELATORIO-MISSAO-01.md](RELATORIO-MISSAO-01.md). Os relatóri
 ## Missão 02 — homologação
 
 Consulte [RELATORIO-MISSAO-02.md](RELATORIO-MISSAO-02.md) e [CHECKLIST-MISSAO-02.md](CHECKLIST-MISSAO-02.md). A galeria offline está em `docs/missao-02/index.html`; ela exibe capturas, não o site interativo. Os testes adicionais estão em `tests/homologacao.spec.ts`. Para renovar as capturas, com um servidor de produção local na porta 3000, execute `node scripts/capturar-homologacao.mjs`. Esse comando não inicia servidor nem publica o site.
+
+## Etapa atual — preparação final
+
+O responsável aprovou a versão que executou no Windows. Veja [PREPARACAO-PUBLICACAO.md](docs/PREPARACAO-PUBLICACAO.md) e [RELATORIO-MISSAO-03.md](RELATORIO-MISSAO-03.md) para o aceite registrado, a preparação técnica e as informações jurídicas/domínio ainda pendentes. Essa etapa não publica o site nem retira `noindex`.

@@ -73,6 +73,10 @@ A suíte requer build atualizado e porta 3000 livre, inicia seu próprio servido
 4. Quando solicitado um ZIP, exclua `.git`, `node_modules`, `.next`, caches e segredos; inclua código, lockfile e instruções. Preserve a entrega anterior usando outro nome.
 5. Pare ao concluir o escopo autorizado; não inicie uma nova missão ou publicação automaticamente.
 
-## Próximo escopo sugerido, ainda não iniciado
+## Estado atual e próximo trabalho
 
-Missão 02: homologação visual e funcional, com comparação institucional e checklist para aparelhos reais. A escolha da próxima missão pertence ao usuário. Criar este agente não autoriza iniciar essa missão.
+- Missões 01 e 02 executadas; a segunda registrou build, TypeScript e 44 testes aprovados. São resultados históricos, não garantia sobre alterações futuras.
+- A entrega está no GitHub na branch `entrega-windows`. O envio de código foi autorizado separadamente da publicação do site.
+- Após executar no Windows, o usuário informou: “Conseguir. Esta tudo aprovado e rodando, pode avançar para o proximo passo!”. Registre isso como aceite da versão que ele avaliou, sem inferir revisão jurídica, testes iOS/Android, autorização de deploy ou integrações.
+- Etapa atual: preparação final para futura publicação, mantendo o visual aprovado e `noindex`. Veja `docs/PREPARACAO-PUBLICACAO.md` e o relatório da Missão 03.
+- Domínio definitivo e informações jurídicas precisam ser fornecidos/confirmados pelo responsável antes de configurar URLs definitivas ou substituir o aviso preliminar.
