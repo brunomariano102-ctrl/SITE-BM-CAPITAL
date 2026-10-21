@@ -82,3 +82,7 @@ A suíte requer build atualizado e porta 3000 livre, inicia seu próprio servido
 - O domínio planejado informado é `https://www.solucoesbmcapital.com.br`. Razão social e sede estão em `lib/site.ts`, fornecidas pelo responsável; não houve consulta cadastral externa ou configuração DNS.
 - O responsável corrigiu o CNPJ para 45.270.578/0001-04; os dígitos verificadores são válidos e o valor está em `lib/site.ts`. A checagem não comprova situação cadastral. O aviso segue preliminar, versão 2026-10-21, pois a revisão jurídica ainda não foi feita. Consulte a constante em `lib/whatsapp.ts` para a versão atual.
 - Não marque o aviso como definitivo nem declare dados cadastrais validados sem evidência correspondente.
+
+## Apoio jurídico solicitado pelo usuário
+
+Quando o usuário solicitar o Agente Jurídico BM Capital, leia também `docs/juridico/AGENTS.md` e siga esse escopo para a revisão. O guia está em `docs/AGENTE-JURIDICO.md`. A criação do agente e sua análise preliminar não autorizam mudanças no aviso nem comprovam revisão profissional ou conformidade jurídica.

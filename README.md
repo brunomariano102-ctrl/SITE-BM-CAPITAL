@@ -77,3 +77,7 @@ Consulte [RELATORIO-MISSAO-02.md](RELATORIO-MISSAO-02.md) e [CHECKLIST-MISSAO-02
 O responsável aprovou a versão que executou no Windows. Veja [PREPARACAO-PUBLICACAO.md](docs/PREPARACAO-PUBLICACAO.md) e [RELATORIO-MISSAO-03.md](RELATORIO-MISSAO-03.md) para o aceite registrado, a preparação técnica e a revisão jurídica e a hospedagem ainda pendentes. Essa etapa não publica o site nem retira `noindex`.
 
 Para revisão jurídica, há um [briefing técnico](docs/BRIEFING-REVISAO-PRIVACIDADE.md) descrevendo o fluxo implementado e as decisões ainda necessárias. Domínio e dados institucionais estão centralizados em `lib/site.ts`; isso não configura DNS nem publica o site.
+
+## Apoio à revisão jurídica
+
+O [Agente Jurídico BM Capital](docs/AGENTE-JURIDICO.md) organiza a revisão do aviso e do fluxo WhatsApp. Suas análises são preliminares e não substituem validação profissional. Nenhuma sugestão desse agente é aplicada ao site automaticamente.
