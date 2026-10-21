@@ -89,3 +89,7 @@ Aplicados os esclarecimentos sobre WhatsApp e continuidade pela equipe/vendedore
 ## Hospedagem em preparação — Missão 05
 
 O domínio foi comprado no Registro.br, segundo o responsável. A preparação para Vercel está no [guia de hospedagem](docs/hospedagem/VERCEL-REGISTROBR.md) e no [relatório](RELATORIO-MISSAO-05.md). Node 24.x está declarado no pacote. Nenhum projeto, deploy, contratação ou DNS foi ativado. Conferir plano compatível com uso comercial antes de contratar; importação Git pode publicar automaticamente e não deve ser feita antes de autorização específica.
+
+## Agente de hospedagem
+
+O [Agente de Hospedagem BM Capital](docs/AGENTE-HOSPEDAGEM.md) orienta a preparação da Vercel e do Registro.br. O checklist distingue preparação, primeiro deploy e DNS; nenhum deles é automaticamente autorizado pela criação do agente.

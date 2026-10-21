@@ -94,3 +94,7 @@ Após discutir a operação, o usuário declarou “Tudo aprovado! Vamos continu
 ## Hospedagem em preparação
 
 O usuário confirmou que comprou apenas o domínio no Registro.br e pediu avanço na opção Vercel. Leia `docs/hospedagem/VERCEL-REGISTROBR.md` e `RELATORIO-MISSAO-05.md`. Isso não autoriza criar/importar projeto ou deploy automático, nem contratar plano/DNS. Runtime declarado: Node 24.x. Não presuma que plano Hobby permite uso comercial ou que a conta já existe. Não indique registros DNS genéricos; usar somente os valores do projeto quando houver criação e autorização correspondentes.
+
+## Agente de hospedagem solicitado pelo usuário
+
+Para pedidos ao Agente de Hospedagem BM Capital, leia `docs/hospedagem/AGENTS.md`, além do guia `docs/AGENTE-HOSPEDAGEM.md`. Criar o agente não equivale a criar conta/projeto, contratar plano, importar repositório, gerar preview, alterar DNS ou publicar. Use as autorizações já dadas para o escopo correspondente, sem pedi-las novamente por rotina.
