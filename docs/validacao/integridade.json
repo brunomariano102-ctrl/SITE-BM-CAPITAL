@@ -1,0 +1,15 @@
+{
+  "base_zip_sha256": "8067f1ee9532cd61a25d695c0041c11b03258b120e9ec4d28224841fb3fa14b1",
+  "official_assets_sha256": {
+    "public/assets/bm-capital-assinatura.png": "75325263d6b9244a01fec8025a02af89bdfbfd54de3aecbb9701ad8deb20e8ac",
+    "public/assets/bm-capital-logo-transparente.png": "ad2481ee83286b67beb085d0d5166646281b427a56670ba0da2c5641eddeb3af",
+    "public/assets/bm-capital-logo.png": "1815743a3fa22dbd45e767318913b24dd3c8c6ef0898cc375473ff762ca79171"
+  },
+  "versions": {
+    "next": "15.5.28",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "5.9.3",
+    "@playwright/test": "1.64.1"
+  }
+}

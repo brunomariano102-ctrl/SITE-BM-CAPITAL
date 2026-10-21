@@ -1,0 +1,6 @@
+{
+  "compared_with": "bm-capital-missao01.zip",
+  "changed_existing_files_outside_docs": [
+    "app/layout.tsx"
+  ]
+}

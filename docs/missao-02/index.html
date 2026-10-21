@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>BM Capital — Evidências da Missão 02</title>
+<style>body{margin:0;padding:24px;background:#f7f4ee;color:#172636;font:16px/1.6 Arial,sans-serif}main{max-width:1440px;margin:auto}h1{font-family:Georgia,serif}label{display:inline-block;margin:0 20px 16px 0}select{padding:8px;font:inherit}img{display:block;max-width:100%;height:auto;border:1px solid #d9d8d5;margin:16px auto}a{color:#735421}.controls{position:sticky;top:0;background:#f7f4ee;padding:12px 0;border-bottom:1px solid #cba45e}small{display:block}button{padding:8px;font:inherit}</style></head>
+<body><main><h1>BM Capital — Missão 02</h1><p>Galeria local de capturas. Não é o site interativo e não representa aprovação do responsável. Nenhuma publicação ou mensagem real foi realizada.</p>
+<p><a href="../../CHECKLIST-MISSAO-02.md">Checklist de validação</a> · <a href="../../RELATORIO-MISSAO-02.md">Relatório</a></p>
+<div class="controls"><label>Página <select id="page"><option value="home">Home</option><option value="consorcios">Consórcios</option><option value="credito">Crédito</option><option value="seguros">Seguros</option><option value="investimentos">Investimentos</option><option value="planejamento">Planejamento</option><option value="privacidade">Privacidade</option></select></label><label>Largura <select id="viewport"><option value="desktop">Desktop — 1440 px</option><option value="mobile">Mobile — 390 px</option><option value="estreito">Mobile estreito — 320 px</option></select></label><small>As imagens integrais permitem rolar até o rodapé. Fontes e controles nativos podem variar no aparelho real.</small></div>
+<img id="capture" src="home-desktop.png" alt="Captura integral da home em desktop">
+<noscript><p>Sem JavaScript, abra as imagens PNG desta pasta individualmente.</p></noscript>
+<script>const page=document.getElementById('page');const viewport=document.getElementById('viewport');const capture=document.getElementById('capture');function update(){capture.src=page.value+'-'+viewport.value+'.png';capture.alt='Captura integral: '+page.selectedOptions[0].text+' / '+viewport.selectedOptions[0].text;}page.addEventListener('change',update);viewport.addEventListener('change',update);</script>
+</main></body></html>

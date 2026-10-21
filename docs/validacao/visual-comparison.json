@@ -1,0 +1,40 @@
+[
+  {
+    "viewport": "desktop",
+    "dimensions": [
+      1440,
+      4657
+    ],
+    "different_pixels": 128,
+    "total_pixels": 6706080,
+    "percent_different": 0.001909,
+    "bounds": [
+      1017,
+      4023,
+      1086,
+      4144
+    ]
+  },
+  {
+    "viewport": "mobile",
+    "dimensions": [
+      390,
+      8232
+    ],
+    "different_pixels": 0,
+    "total_pixels": 3210480,
+    "percent_different": 0.0,
+    "bounds": null
+  },
+  {
+    "viewport": "small",
+    "dimensions": [
+      320,
+      9114
+    ],
+    "different_pixels": 0,
+    "total_pixels": 2916480,
+    "percent_different": 0.0,
+    "bounds": null
+  }
+]

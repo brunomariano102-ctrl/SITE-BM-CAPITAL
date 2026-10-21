@@ -1,0 +1,37 @@
+{
+  "home": [
+    {
+      "reference": "docs/validacao/depois-desktop.png",
+      "current": "docs/missao-02/home-desktop.png",
+      "reference_size": [
+        1440,
+        4657
+      ],
+      "current_size": [
+        1440,
+        4657
+      ],
+      "different_pixels": 0,
+      "bounds": null
+    },
+    {
+      "reference": "docs/validacao/depois-mobile.png",
+      "current": "docs/missao-02/home-mobile.png",
+      "reference_size": [
+        390,
+        8232
+      ],
+      "current_size": [
+        390,
+        8232
+      ],
+      "different_pixels": 0,
+      "bounds": null
+    }
+  ],
+  "official_assets_unchanged": {
+    "public/assets/bm-capital-assinatura.png": true,
+    "public/assets/bm-capital-logo-transparente.png": true,
+    "public/assets/bm-capital-logo.png": true
+  }
+}

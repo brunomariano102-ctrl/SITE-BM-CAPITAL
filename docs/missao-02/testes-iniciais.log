@@ -1,0 +1,190 @@
+
+> bm-capital-site@0.9.0 test:e2e
+> playwright test
+
+[WebServer] (node:25973) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:25999) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 44 tests using 2 workers
+
+(node:26028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26029) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/homologacao.spec.ts:5:5 › homologação: todos os links internos e âncoras possuem destino (5.7s)
+  ✘   2 [desktop] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona a seção abaixo do cabeçalho (6.9s)
+  ✓   3 [desktop] › tests/homologacao.spec.ts:40:7 › homologação: abertura real de popup e fallback interceptados, marketing false (2.0s)
+(node:26453) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [desktop] › tests/homologacao.spec.ts:71:5 › homologação: renderização, console e requisições das sete páginas (2.0s)
+  ✓   6 [desktop] › tests/site.spec.ts:37:7 › solução consorcios: conteúdo, título e retorno (1.1s)
+  ✓   5 [desktop] › tests/homologacao.spec.ts:40:7 › homologação: abertura real de popup e fallback interceptados, marketing true (2.6s)
+  ✓   7 [desktop] › tests/site.spec.ts:37:7 › solução credito: conteúdo, título e retorno (1.3s)
+  ✓   8 [desktop] › tests/site.spec.ts:37:7 › solução seguros: conteúdo, título e retorno (1.3s)
+  ✓   9 [desktop] › tests/site.spec.ts:37:7 › solução investimentos: conteúdo, título e retorno (1.2s)
+  ✓  10 [desktop] › tests/site.spec.ts:37:7 › solução planejamento: conteúdo, título e retorno (1.3s)
+  ✓  12 [desktop] › tests/site.spec.ts:93:5 › privacidade: aviso separado e link de retorno (1.7s)
+  ✓  13 [desktop] › tests/site.spec.ts:115:5 › rotas inválidas, inclusive propriedades de protótipo, retornam 404 (226ms)
+  ✓  11 [desktop] › tests/site.spec.ts:52:5 › home: navegação, cinco soluções e ativos institucionais (3.6s)
+  ✓  15 [desktop] › tests/site.spec.ts:143:5 › formulário: obrigatórios, espaços em branco e ciência do aviso (1.5s)
+  ✓  14 [desktop] › tests/site.spec.ts:125:5 › objetivos preenchem o formulário sem enviar dados (6.5s)
+  ✓  16 [desktop] › tests/site.spec.ts:194:7 › WhatsApp: marketing recusado, codificação e fallback (4.1s)
+  ✓  18 [desktop] › tests/site.spec.ts:234:5 › sem rastreadores, cookies ou persistência no preenchimento (1.7s)
+  ✓  19 [desktop] › tests/site.spec.ts:261:5 › sem JavaScript: formulário não transmite dados por GET (758ms)
+  ✓  17 [desktop] › tests/site.spec.ts:194:7 › WhatsApp: marketing autorizado, codificação e fallback (4.0s)
+  ✓  20 [desktop] › tests/site.spec.ts:276:5 › menu mobile: abre, fecha por link/Escape e não captura Escape fora do menu (1.1s)
+  ✓  22 [desktop] › tests/site.spec.ts:322:5 › cabeçalhos de segurança e noindex preservados (900ms)
+(node:27234) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  21 [desktop] › tests/site.spec.ts:300:5 › responsividade: todas as páginas sem rolagem horizontal em 320–1440px (4.0s)
+(node:27524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  23 [mobile] › tests/homologacao.spec.ts:5:5 › homologação: todos os links internos e âncoras possuem destino (6.8s)
+  ✓  25 [mobile] › tests/homologacao.spec.ts:40:7 › homologação: abertura real de popup e fallback interceptados, marketing false (2.5s)
+  ✘  24 [mobile] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona a seção abaixo do cabeçalho (7.1s)
+(node:27962) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  26 [mobile] › tests/homologacao.spec.ts:40:7 › homologação: abertura real de popup e fallback interceptados, marketing true (2.7s)
+  ✘  27 [mobile] › tests/homologacao.spec.ts:71:5 › homologação: renderização, console e requisições das sete páginas (2.0s)
+  ✓  28 [mobile] › tests/site.spec.ts:37:7 › solução consorcios: conteúdo, título e retorno (1.2s)
+(node:28148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  29 [mobile] › tests/site.spec.ts:37:7 › solução seguros: conteúdo, título e retorno (1.1s)
+  ✓  30 [mobile] › tests/site.spec.ts:37:7 › solução credito: conteúdo, título e retorno (1.3s)
+  ✓  31 [mobile] › tests/site.spec.ts:37:7 › solução investimentos: conteúdo, título e retorno (1.2s)
+  ✓  32 [mobile] › tests/site.spec.ts:37:7 › solução planejamento: conteúdo, título e retorno (1.3s)
+  ✓  34 [mobile] › tests/site.spec.ts:93:5 › privacidade: aviso separado e link de retorno (1.3s)
+  ✓  35 [mobile] › tests/site.spec.ts:115:5 › rotas inválidas, inclusive propriedades de protótipo, retornam 404 (56ms)
+  ✓  33 [mobile] › tests/site.spec.ts:52:5 › home: navegação, cinco soluções e ativos institucionais (2.7s)
+  ✓  37 [mobile] › tests/site.spec.ts:143:5 › formulário: obrigatórios, espaços em branco e ciência do aviso (2.2s)
+  ✓  38 [mobile] › tests/site.spec.ts:194:7 › WhatsApp: marketing recusado, codificação e fallback (5.3s)
+  ✓  36 [mobile] › tests/site.spec.ts:125:5 › objetivos preenchem o formulário sem enviar dados (8.5s)
+  ✓  40 [mobile] › tests/site.spec.ts:234:5 › sem rastreadores, cookies ou persistência no preenchimento (2.2s)
+  ✓  41 [mobile] › tests/site.spec.ts:261:5 › sem JavaScript: formulário não transmite dados por GET (850ms)
+  ✓  42 [mobile] › tests/site.spec.ts:276:5 › menu mobile: abre, fecha por link/Escape e não captura Escape fora do menu (1.5s)
+  ✓  39 [mobile] › tests/site.spec.ts:194:7 › WhatsApp: marketing autorizado, codificação e fallback (5.7s)
+  ✓  44 [mobile] › tests/site.spec.ts:322:5 › cabeçalhos de segurança e noindex preservados (1.1s)
+  ✓  43 [mobile] › tests/site.spec.ts:300:5 › responsividade: todas as páginas sem rolagem horizontal em 320–1440px (3.5s)
+
+
+  1) [desktop] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona a seção abaixo do cabeçalho 
+
+    Error: Âncora objetivos visível abaixo do cabeçalho
+
+    Âncora objetivos visível abaixo do cabeçalho
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+    Call Log:
+    - Timeout 5000ms exceeded while waiting on the predicate
+
+      33 |       const target = section.getBoundingClientRect();
+      34 |       return target.top >= header.bottom - 1 && target.top < window.innerHeight;
+    > 35 |     }), { message: `Âncora ${id} visível abaixo do cabeçalho` }).toBe(true);
+         |                                                                  ^
+      36 |   }
+      37 | });
+      38 |
+        at /workspace/SITE-BM-CAPITAL/tests/homologacao.spec.ts:35:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona a seção abaixo do cabeçalho 
+
+    Error: Âncora objetivos visível abaixo do cabeçalho
+
+    Âncora objetivos visível abaixo do cabeçalho
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+    Call Log:
+    - Timeout 5000ms exceeded while waiting on the predicate
+
+      33 |       const target = section.getBoundingClientRect();
+      34 |       return target.top >= header.bottom - 1 && target.top < window.innerHeight;
+    > 35 |     }), { message: `Âncora ${id} visível abaixo do cabeçalho` }).toBe(true);
+         |                                                                  ^
+      36 |   }
+      37 | });
+      38 |
+        at /workspace/SITE-BM-CAPITAL/tests/homologacao.spec.ts:35:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homologacao-homologação-ca-482b7-a-seção-abaixo-do-cabeçalho-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests/homologacao.spec.ts:71:5 › homologação: renderização, console e requisições das sete páginas 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    + ]
+
+      84 |     expect(await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length }))).toEqual({ local: 0, session: 0 });
+      85 |   }
+    > 86 |   expect(errors).toEqual([]);
+         |                  ^
+      87 |   expect(failed).toEqual([]);
+      88 |   expect(outside).toEqual([]);
+      89 |   expect(await context.cookies()).toEqual([]);
+        at /workspace/SITE-BM-CAPITAL/tests/homologacao.spec.ts:86:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/homologacao-homologação-re-e0418-equisições-das-sete-páginas-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/homologacao-homologação-re-e0418-equisições-das-sete-páginas-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/homologacao-homologação-re-e0418-equisições-das-sete-páginas-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/homologacao-homologação-re-e0418-equisições-das-sete-páginas-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [desktop] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona a seção abaixo do cabeçalho 
+    [mobile] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona a seção abaixo do cabeçalho 
+    [mobile] › tests/homologacao.spec.ts:71:5 › homologação: renderização, console e requisições das sete páginas 
+  41 passed (1.1m)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
