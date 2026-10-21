@@ -1,0 +1,13 @@
+{
+  "source_repository": "https://github.com/vercel/vercel",
+  "reference_commit": "c628be7835e03a965b93e9cf9e2bd5ac2acbf5eb",
+  "reference_paths": [
+    "packages/build-utils/src/fs/node-version.ts",
+    "packages/build-utils/src/fs/run-user-scripts.ts"
+  ],
+  "direct_docs_access": "HTTP 403; preços e termos não confirmados",
+  "declared_engine": "24.x",
+  "dependency_graph_preserved": true,
+  "deployment_executed": false,
+  "dns_changed": false
+}

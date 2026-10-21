@@ -90,3 +90,7 @@ Quando o usuário solicitar o Agente Jurídico BM Capital, leia também `docs/ju
 ## Aplicação dos esclarecimentos aprovados
 
 Após discutir a operação, o usuário declarou “Tudo aprovado! Vamos continuar com o site!”. Isso autoriza aplicar os esclarecimentos da minuta sobre abertura do WhatsApp, equipe interna, números de vendedores e coordenação das escolhas, preservando o formulário e o visual. Essa aprovação não confirma execução dos controles no computador, define retenção ou autoriza publicação. Os esclarecimentos foram aplicados na revisão 2026-10-21-r1; ver `RELATORIO-MISSAO-04.md`.
+
+## Hospedagem em preparação
+
+O usuário confirmou que comprou apenas o domínio no Registro.br e pediu avanço na opção Vercel. Leia `docs/hospedagem/VERCEL-REGISTROBR.md` e `RELATORIO-MISSAO-05.md`. Isso não autoriza criar/importar projeto ou deploy automático, nem contratar plano/DNS. Runtime declarado: Node 24.x. Não presuma que plano Hobby permite uso comercial ou que a conta já existe. Não indique registros DNS genéricos; usar somente os valores do projeto quando houver criação e autorização correspondentes.

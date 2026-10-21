@@ -20,13 +20,13 @@ Não se deve inferir desse aceite revisão jurídica, teste em aparelhos especí
 
 | Informação ou decisão | Estado |
 | --- | --- |
-| Domínio definitivo e endereço HTTPS do site | Informado: `https://www.solucoesbmcapital.com.br`; URLs preparadas, sem verificação de registro/DNS |
+| Domínio definitivo e endereço HTTPS do site | Informado: `https://www.solucoesbmcapital.com.br`; URLs preparadas; responsável confirmou compra no Registro.br, sem consulta externa de registro/DNS |
 | Razão social/nome da entidade controladora e CNPJ aplicável | BM Capital Ltda; CNPJ corrigido pelo responsável para 45.270.578/0001-04, com dígitos verificadores válidos |
 | Endereço institucional e dados destinados à divulgação | Rua José Lins do Rego, nº 32, bairro Pompilio Sampaio, Jequié, Bahia, conforme informado |
 | Aviso de Privacidade final revisado | Responsável confirmou que ainda não recebeu revisão jurídica |
 | Retenção, operadores, compartilhamento e atendimento de direitos | Aguardando definição jurídica/operacional |
 | Gestão da autorização de marketing e revogação | Aguardando definição operacional; sem CRM nesta etapa |
-| Hospedagem e conta de destino | Não selecionadas/configuradas nesta etapa |
+| Hospedagem e conta de destino | Vercel em preparação; responsável confirmou que ainda não contratou hospedagem. Conta, plano e projeto não criados/configurados pelo agente |
 | Autorização explícita para publicação e indexação | Não concedida |
 
 Não preencha esses dados por dedução ou com exemplos no site. Não é necessário fornecer senhas ou chaves nesta conversa.
@@ -54,4 +54,4 @@ Nenhuma hospedagem foi criada ou contratada. Não foram alterados DNS, Pages, in
 
 ## Continuação após aprovação das orientações
 
-Os esclarecimentos foram aplicados ao formulário e às seções 2, 4, 5 e 6 do aviso, mantendo-o preliminar. Os controles manuais foram descritos como em organização, sem prometer automação ou execução já comprovada. O responsável escolheu guardar o controle no próprio computador. Detalhes e testes em `RELATORIO-MISSAO-04.md`. A situação de registro do domínio e a hospedagem foram perguntadas; até receber resposta, não assumir fornecedor ou configuração existente.
+Os esclarecimentos foram aplicados ao formulário e às seções 2, 4, 5 e 6 do aviso, mantendo-o preliminar. Os controles manuais foram descritos como em organização, sem prometer automação ou execução já comprovada. O responsável escolheu guardar o controle no próprio computador. Detalhes e testes em `RELATORIO-MISSAO-04.md`. O responsável confirmou compra apenas do domínio no Registro.br. A opção Vercel está em preparação, sem conta/projeto criado pelo agente e sem deploy. Guia em `docs/hospedagem/VERCEL-REGISTROBR.md`.

@@ -85,3 +85,7 @@ O [Agente Jurídico BM Capital](docs/AGENTE-JURIDICO.md) organiza a revisão do 
 ## Esclarecimentos aprovados — Missão 04
 
 Aplicados os esclarecimentos sobre WhatsApp e continuidade pela equipe/vendedores no aviso preliminar **2026-10-21-r1**. Confira [RELATORIO-MISSAO-04.md](RELATORIO-MISSAO-04.md). A aplicação não foi integrada à planilha, e retenção, execução dos controles manuais e revisão profissional continuam pendentes. Nenhum deploy foi feito.
+
+## Hospedagem em preparação — Missão 05
+
+O domínio foi comprado no Registro.br, segundo o responsável. A preparação para Vercel está no [guia de hospedagem](docs/hospedagem/VERCEL-REGISTROBR.md) e no [relatório](RELATORIO-MISSAO-05.md). Node 24.x está declarado no pacote. Nenhum projeto, deploy, contratação ou DNS foi ativado. Conferir plano compatível com uso comercial antes de contratar; importação Git pode publicar automaticamente e não deve ser feita antes de autorização específica.

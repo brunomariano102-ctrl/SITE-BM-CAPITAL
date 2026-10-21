@@ -1,0 +1,62 @@
+{
+  "node": "v24.19.0",
+  "runtime": "Produção local Next.js; não Vercel",
+  "records": [
+    {
+      "path": "/",
+      "status": 200,
+      "expected": 200,
+      "title": "BM Capital | Soluções Financeiras Inteligentes",
+      "noindex": true
+    },
+    {
+      "path": "/privacidade",
+      "status": 200,
+      "expected": 200,
+      "title": "Aviso de Privacidade | BM Capital",
+      "noindex": true
+    },
+    {
+      "path": "/solucoes/consorcios",
+      "status": 200,
+      "expected": 200,
+      "title": "Consórcios | BM Capital",
+      "noindex": true
+    },
+    {
+      "path": "/solucoes/credito",
+      "status": 200,
+      "expected": 200,
+      "title": "Crédito | BM Capital",
+      "noindex": true
+    },
+    {
+      "path": "/solucoes/seguros",
+      "status": 200,
+      "expected": 200,
+      "title": "Seguros | BM Capital",
+      "noindex": true
+    },
+    {
+      "path": "/solucoes/investimentos",
+      "status": 200,
+      "expected": 200,
+      "title": "Investimentos | BM Capital",
+      "noindex": true
+    },
+    {
+      "path": "/solucoes/planejamento",
+      "status": 200,
+      "expected": 200,
+      "title": "Planejamento | BM Capital",
+      "noindex": true
+    },
+    {
+      "path": "/solucoes/constructor",
+      "status": 404,
+      "expected": 404,
+      "title": "BM Capital | Soluções Financeiras Inteligentes",
+      "noindex": true
+    }
+  ]
+}
