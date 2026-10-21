@@ -31,7 +31,7 @@ A referência ao contato pode apontar para o registro do canal oficial, evitando
 
 ## O que ainda precisa ser decidido
 
-- Onde o controle ficará e quem poderá vê-lo/alterá-lo; como os vendedores receberão somente suas atribuições e atualizações.
+- O responsável escolheu manter a cópia de trabalho em seu computador. Falta definir acesso, backup e como os vendedores receberão somente suas atribuições e atualizações.
 - Como conferir e registrar as evidências e como supervisionar o uso dos números próprios.
 - Regras de retenção e descarte, incluindo o registro mínimo necessário para respeitar recusas/revogações. Revogar marketing não equivale a apagar automaticamente todo histórico de atendimento ou obrigações legítimas; definir o tratamento adequado com o jurídico.
 - Redação final do aviso compatível com o processo adotado. Não afirmar que esse controle já existe antes de colocá-lo em prática.

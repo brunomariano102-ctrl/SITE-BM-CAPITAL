@@ -30,6 +30,14 @@ Ao ser perguntado sobre o registro de autorizações, recusas e pedidos para par
 
 Foram preparados uma [proposta de fluxo manual](PROPOSTA-CONTROLE-MARKETING.md), modelos vazios CSV/Excel e uma [minuta do aviso](MINUTA-AJUSTES-AVISO.md) para avaliação. Não houve integração, armazenamento de contatos reais ou adoção automática da proposta.
 
+## Armazenamento do controle — escolha informada
+
+Ao ser perguntado se o controle ficaria no computador ou em conta corporativa com acesso restrito, o responsável respondeu: “No meu computador.” Confirmada a preferência por guardar a cópia de trabalho no computador do coordenador.
+
+Isso não comprova que a planilha já foi baixada/preenchida, que o computador é de uso exclusivo, que há proteção de acesso, backup ou ausência de sincronização em nuvem. Também não define onde ficam conversas, anexos e cópias dos vendedores.
+
+Foi preparado um [guia de uso local](GUIA-USO-LOCAL.md), sem acesso ao Windows do responsável e sem configuração de contas ou serviços.
+
 ## Pontos ainda a esclarecer
 
 - Como a equipe acessará o número oficial e o e-mail: aparelhos vinculados, plataforma de atendimento ou outra solução.

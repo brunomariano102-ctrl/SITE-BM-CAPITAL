@@ -28,7 +28,7 @@ Para dados de teste, use somente informações fictícias. Não habilite fórmul
 
 O arquivo não recebe o formulário, não guarda conversas automaticamente, não bloqueia envios e não sincroniza números próprios. Não tem macros, fórmulas, ligações externas ou registro imutável. Filtros e validações não são controle de acesso e podem ser contornados ao colar dados. Não é certificado de conformidade.
 
-A empresa ainda precisa escolher onde guardar a cópia preenchida, quem terá acesso, como os vendedores receberão apenas suas atribuições e atualizações e quais serão retenção e descarte. O controle completo não deve ser distribuído a toda a equipe por padrão.
+O responsável escolheu manter a cópia preenchida no seu computador; consulte o [guia de uso local](GUIA-USO-LOCAL.md). Ainda é necessário definir quem terá acesso, o backup, como os vendedores receberão apenas suas atribuições e atualizações e quais serão retenção e descarte. O controle completo não deve ser distribuído a toda a equipe por padrão.
 
 Estrutura e validações foram verificadas com Python/openpyxl no ambiente do projeto. A abertura e edição no Excel real do Windows ainda precisam ser confirmadas pelo responsável. Não foi executada nova suíte do site, pois a aplicação não mudou.
 
