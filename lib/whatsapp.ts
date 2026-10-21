@@ -1,4 +1,7 @@
-export const PRIVACY_NOTICE_VERSION = "2026-10-21";
+const PRIVACY_NOTICE_DATE = "2026-10-21";
+const PRIVACY_NOTICE_REVISION = 1;
+export const PRIVACY_NOTICE_VERSION = `${PRIVACY_NOTICE_DATE}-r${PRIVACY_NOTICE_REVISION}`;
+export const PRIVACY_NOTICE_DISPLAY_VERSION = `${PRIVACY_NOTICE_DATE.split("-").reverse().join("/")} — revisão ${PRIVACY_NOTICE_REVISION}`;
 export const WHATSAPP_NUMBER = "5573999724985";
 
 export type DiagnosisMessage = {

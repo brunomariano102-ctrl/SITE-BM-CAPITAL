@@ -164,10 +164,12 @@ export function LeadForm() {
         </p>
       </noscript>
       <p className="note">
-        Os dados e suas escolhas são usados no navegador para preparar a
-        mensagem. Não há armazenamento nem registro de consentimento no servidor
-        deste site. O envio depende da sua confirmação no WhatsApp. Não inclua
-        documentos, senhas ou informações financeiras sensíveis.
+        Ao continuar, os dados preenchidos e suas escolhas comporão uma URL
+        aberta no serviço WhatsApp. Você poderá revisar a mensagem antes de
+        enviá-la à BM Capital. A abertura do serviço está sujeita às práticas de
+        privacidade do WhatsApp. Este formulário não mantém histórico de
+        consentimentos. Não inclua documentos, senhas ou informações financeiras
+        sensíveis.
       </p>
     </form>
   );

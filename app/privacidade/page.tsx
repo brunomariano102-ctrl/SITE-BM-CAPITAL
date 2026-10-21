@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { site } from "../../lib/site";
-import { PRIVACY_NOTICE_VERSION } from "../../lib/whatsapp";
+import { PRIVACY_NOTICE_DISPLAY_VERSION } from "../../lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Aviso de Privacidade",
@@ -29,7 +29,7 @@ export default function Privacidade() {
       <a href="/">← Voltar à BM Capital</a>
       <h1>Aviso de Privacidade</h1>
       <p>
-        <strong>Versão:</strong> {PRIVACY_NOTICE_VERSION.split("-").reverse().join("/")}. <strong>Status:</strong> aviso
+        <strong>Versão:</strong> {PRIVACY_NOTICE_DISPLAY_VERSION}. <strong>Status:</strong> aviso
         preliminar, sujeito à validação jurídica antes da publicação.
       </p>
       <h2>1. Quem trata os dados</h2>
@@ -41,7 +41,11 @@ export default function Privacidade() {
       <p>
         O pré-diagnóstico solicita primeiro nome, objetivo e prazo estimado.
         Esses dados são usados localmente no navegador para preparar uma
-        mensagem de WhatsApp que você poderá revisar. Caso você decida enviá-la,
+        mensagem de atendimento. Ao continuar, os dados preenchidos e suas
+        escolhas compõem uma URL aberta no serviço WhatsApp. Você poderá revisar
+        a mensagem antes de enviá-la à BM Capital. A abertura do serviço externo
+        está sujeita também às práticas de privacidade do WhatsApp. Caso você
+        decida enviar a mensagem,
         a BM Capital poderá usar o conteúdo e seu contato para responder à
         solicitação, realizar o diagnóstico consultivo e dar continuidade às
         providências que você pedir.
@@ -57,6 +61,14 @@ export default function Privacidade() {
       </p>
       <h2>4. Compartilhamento</h2>
       <p>
+        Pessoas autorizadas da equipe interna da BM Capital poderão acessar os
+        dados necessários para responder à sua solicitação. O atendimento poderá
+        ser continuado pelo vendedor designado, inclusive por número próprio
+        utilizado na atividade profissional, com identificação de sua atuação
+        pela BM Capital. O encaminhamento para atendimento não representa
+        autorização para futuras comunicações promocionais.
+      </p>
+      <p>
         O preenchimento do formulário não autoriza o envio indiscriminado de
         dados a bancos, administradoras, seguradoras ou parceiros. Quando o
         andamento da solicitação exigir compartilhamento, a BM Capital deverá
@@ -67,12 +79,19 @@ export default function Privacidade() {
       </p>
       <h2>5. Armazenamento e retenção</h2>
       <p>
-        Esta versão do formulário não envia informações para banco de dados ou
-        servidor da BM Capital e não mantém histórico de aceites. Se você enviar
-        a mensagem pelo WhatsApp, ela poderá integrar o histórico de
-        atendimento, conforme regras de retenção a serem formalizadas pela BM
-        Capital. A futura integração com CRM exigirá atualização deste aviso e
-        controles próprios.
+        Os dados preenchidos neste formulário não são enviados a um backend de
+        captação de leads da BM Capital nem gravados pelo formulário em um
+        histórico de consentimentos. Se você enviar a mensagem no WhatsApp, as
+        informações poderão integrar o histórico de atendimento. O controle
+        manual das escolhas está sendo organizado sob a coordenação do
+        responsável pela empresa, separado deste site.
+      </p>
+      <p>
+        As regras de retenção e descarte de registros, conversas e backups ainda
+        precisam ser formalizadas. Registros técnicos da futura hospedagem e
+        práticas dos fornecedores também deverão ser avaliados antes da
+        publicação. A futura integração com CRM exigirá atualização deste aviso
+        e controles próprios.
       </p>
       <h2>6. Direitos dos titulares</h2>
       <p>
@@ -82,8 +101,11 @@ export default function Privacidade() {
         <a href="mailto:bmcapitalsolucoes@gmail.com">
           bmcapitalsolucoes@gmail.com
         </a>
-        . O exercício de direitos observará os requisitos e exceções previstos
-        em lei.
+        . Você também pode pedir a revogação de marketing ao vendedor que o
+        estiver atendendo. Os pedidos serão encaminhados à coordenação
+        responsável da BM Capital para tratamento nos canais envolvidos. A
+        recusa de marketing não impede o atendimento solicitado. O exercício de
+        direitos observará os requisitos e exceções previstos em lei.
       </p>
       <h2>7. Cookies e tecnologias</h2>
       <p>

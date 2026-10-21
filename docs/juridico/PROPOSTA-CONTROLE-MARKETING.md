@@ -1,6 +1,6 @@
 # Proposta de controle manual de atendimento e marketing
 
-**Proposta para avaliação do responsável e do jurídico; não implementada ou aprovada.** Não é integração CRM, certificação de conformidade ou autorização para iniciar campanhas. O site permanece inalterado.
+**Orientações aprovadas pelo responsável; execução na empresa e validação profissional ainda não confirmadas.** Não é integração CRM, certificação de conformidade ou autorização para iniciar campanhas. O site permanece inalterado.
 
 ## Ponto de partida confirmado
 

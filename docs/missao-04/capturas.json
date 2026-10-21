@@ -1,0 +1,65 @@
+[
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "path": "/",
+    "scrollWidth": 1440,
+    "form": {
+      "x": 755,
+      "y": 3589.1875,
+      "width": 528,
+      "height": 876.140625
+    }
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "path": "/privacidade",
+    "scrollWidth": 1440,
+    "form": null
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "path": "/",
+    "scrollWidth": 390,
+    "form": {
+      "x": 20,
+      "y": 6897.28125,
+      "width": 350,
+      "height": 1057.703125
+    }
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "path": "/privacidade",
+    "scrollWidth": 390,
+    "form": null
+  },
+  {
+    "device": "estreito",
+    "width": 320,
+    "height": 740,
+    "path": "/",
+    "scrollWidth": 320,
+    "form": {
+      "x": 20,
+      "y": 7534.953125,
+      "width": 280,
+      "height": 1308.859375
+    }
+  },
+  {
+    "device": "estreito",
+    "width": 320,
+    "height": 740,
+    "path": "/privacidade",
+    "scrollWidth": 320,
+    "form": null
+  }
+]

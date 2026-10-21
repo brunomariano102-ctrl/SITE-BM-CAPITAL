@@ -1,0 +1,13 @@
+{
+  "desktop_header_and_hero": {
+    "reference": "docs/validacao/depois-desktop.png",
+    "crop": [
+      0,
+      0,
+      1440,
+      1000
+    ],
+    "different_pixels": 0
+  },
+  "changed_visible_content": "Esclarecimentos aprovados no formulário e aviso; CSS e imagens preservados."
+}

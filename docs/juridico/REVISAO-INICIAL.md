@@ -2,6 +2,8 @@
 
 Data: 21/10/2026. Aviso analisado: versão 2026-10-21.
 
+Atualização posterior: o responsável aprovou as orientações e autorizou a continuidade no site. Esclarecimentos desta análise foram incorporados ao aviso preliminar 2026-10-21-r1; ver [relatório da aplicação](../../RELATORIO-MISSAO-04.md). Esta análise inicial permanece como histórico, não como prova de execução dos controles ou revisão profissional.
+
 **Análise de apoio, com pendências jurídicas e operacionais. Não é parecer de advogado, certificação de conformidade ou autorização de publicação.** O aviso deve continuar preliminar até a validação do texto e da operação pelo responsável e por profissional habilitado.
 
 ## Escopo e evidências

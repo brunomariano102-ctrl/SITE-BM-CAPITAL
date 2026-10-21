@@ -1,6 +1,6 @@
 # Minuta de ajustes — aviso e formulário BM Capital
 
-**Propostas não aprovadas. Não substituir o texto do site automaticamente.** Esta minuta usa as informações do responsável, mas ainda depende da definição da operação e de validação profissional. Não fixa retenção ou base legal definitiva e não autoriza publicação.
+**Atualização:** após o usuário declarar “Tudo aprovado! Vamos continuar com o site!”, os esclarecimentos compatíveis com os fatos confirmados foram aplicados no aviso preliminar 2026-10-21-r1 e no formulário. As partes que dependem da execução de controles ou definição de retenção não foram apresentadas como concluídas. Este documento permanece referência de redação e decisões, não parecer profissional ou autorização de publicação.
 
 ## Informações consideradas
 
@@ -38,11 +38,11 @@ Proposta para delimitar o que o formulário faz, preservando a pendência operac
 
 **Completar antes de uma versão final:** retenção e descarte por finalidade, tratamento de registros mínimos para respeitar recusas/revogações, acessos, cópias e backups, fornecedores/transferências e registros técnicos da hospedagem. Não inserir prazo fictício ou afirmar inexistência de logs.
 
-## Como aplicar futuramente
+## Critérios mantidos para próximas revisões
 
 1. O responsável confirma o processo que de fato será adotado e os pontos ainda pendentes.
 2. O jurídico revisa os enquadramentos e o texto final correspondente à operação.
 3. Com instrução para implementar, atualizar o aviso e a orientação do formulário sem mudar marketing opcional ou a identidade aprovada.
-4. Criar identificação inequívoca da nova versão, sincronizar a data exibida e a mensagem WhatsApp e executar os testes pertinentes. Enquanto a proposta não é aplicada, a versão atual permanece 2026-10-21.
+4. Criar identificação inequívoca da nova versão, sincronizar a data exibida e a mensagem WhatsApp e executar os testes pertinentes. A revisão atual é 2026-10-21-r1.
 
-Esta minuta não é o texto vigente, não foi aplicada e não representa aprovação jurídica.
+A versão servida está em `app/privacidade/page.tsx`. Os esclarecimentos aplicados não representam aprovação jurídica profissional, conclusão dos procedimentos ou publicação.

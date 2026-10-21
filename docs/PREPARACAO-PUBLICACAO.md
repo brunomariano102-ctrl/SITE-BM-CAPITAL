@@ -39,7 +39,7 @@ Nesta etapa, as páginas de soluções recebem descrição e Open Graph próprio
 
 A identificação da controladora e o endereço foram inseridos no aviso preliminar, sem indicar atendimento presencial nesse endereço. O primeiro CNPJ não passou na checagem de dígitos; após solicitação, o responsável corrigiu para 45.270.578/0001-04. O número corrigido passou na checagem aritmética e foi inserido. Não houve consulta ou certificação cadastral externa.
 
-O aviso foi atualizado para a versão **2026-10-21**, sincronizada com a mensagem WhatsApp por uma única constante. A revisão jurídica e as regras operacionais de retenção/marketing continuam pendentes.
+Após aprovação dos esclarecimentos sobre equipe e WhatsApp, o aviso foi atualizado para a versão **2026-10-21-r1** (21/10/2026, revisão 1), sincronizada com a mensagem WhatsApp. A revisão jurídica e as regras operacionais de retenção/marketing continuam pendentes.
 
 ## Sequência após receber as informações
 
@@ -51,3 +51,7 @@ O aviso foi atualizado para a versão **2026-10-21**, sincronizada com a mensage
 ## Limites
 
 Nenhuma hospedagem foi criada ou contratada. Não foram alterados DNS, Pages, indexação, CRM, analytics ou pixels. Não foram enviadas mensagens. Não é possível declarar prontidão jurídica ou publicação concluída nesta etapa.
+
+## Continuação após aprovação das orientações
+
+Os esclarecimentos foram aplicados ao formulário e às seções 2, 4, 5 e 6 do aviso, mantendo-o preliminar. Os controles manuais foram descritos como em organização, sem prometer automação ou execução já comprovada. O responsável escolheu guardar o controle no próprio computador. Detalhes e testes em `RELATORIO-MISSAO-04.md`. A situação de registro do domínio e a hospedagem foram perguntadas; até receber resposta, não assumir fornecedor ou configuração existente.

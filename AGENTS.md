@@ -80,9 +80,13 @@ A suíte requer build atualizado e porta 3000 livre, inicia seu próprio servido
 - Após executar no Windows, o usuário informou: “Conseguir. Esta tudo aprovado e rodando, pode avançar para o proximo passo!”. Registre isso como aceite da versão que ele avaliou, sem inferir revisão jurídica, testes iOS/Android, autorização de deploy ou integrações.
 - Etapa atual: preparação final para futura publicação, mantendo o visual aprovado e `noindex`. Veja `docs/PREPARACAO-PUBLICACAO.md` e o relatório da Missão 03.
 - O domínio planejado informado é `https://www.solucoesbmcapital.com.br`. Razão social e sede estão em `lib/site.ts`, fornecidas pelo responsável; não houve consulta cadastral externa ou configuração DNS.
-- O responsável corrigiu o CNPJ para 45.270.578/0001-04; os dígitos verificadores são válidos e o valor está em `lib/site.ts`. A checagem não comprova situação cadastral. O aviso segue preliminar, versão 2026-10-21, pois a revisão jurídica ainda não foi feita. Consulte a constante em `lib/whatsapp.ts` para a versão atual.
+- O responsável corrigiu o CNPJ para 45.270.578/0001-04; os dígitos verificadores são válidos e o valor está em `lib/site.ts`. A checagem não comprova situação cadastral. O aviso segue preliminar, versão 2026-10-21-r1 (revisão 1), pois a revisão jurídica profissional ainda não foi confirmada. Consulte a constante em `lib/whatsapp.ts` para a versão atual.
 - Não marque o aviso como definitivo nem declare dados cadastrais validados sem evidência correspondente.
 
 ## Apoio jurídico solicitado pelo usuário
 
 Quando o usuário solicitar o Agente Jurídico BM Capital, leia também `docs/juridico/AGENTS.md` e siga esse escopo para a revisão. O guia está em `docs/AGENTE-JURIDICO.md`. A criação do agente e sua análise preliminar não autorizam mudanças no aviso nem comprovam revisão profissional ou conformidade jurídica.
+
+## Aplicação dos esclarecimentos aprovados
+
+Após discutir a operação, o usuário declarou “Tudo aprovado! Vamos continuar com o site!”. Isso autoriza aplicar os esclarecimentos da minuta sobre abertura do WhatsApp, equipe interna, números de vendedores e coordenação das escolhas, preservando o formulário e o visual. Essa aprovação não confirma execução dos controles no computador, define retenção ou autoriza publicação. Os esclarecimentos foram aplicados na revisão 2026-10-21-r1; ver `RELATORIO-MISSAO-04.md`.

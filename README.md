@@ -4,7 +4,7 @@ Projeto Next.js 15 / React 19 / TypeScript baseado integralmente em `bm-capital-
 
 ## Abrir no Windows, sem publicar
 
-1. No GitHub, selecione a branch **`entrega-windows`**, clique em **Code → Download ZIP** e use **Extrair Tudo** no Windows.
+1. No GitHub, selecione a branch **`preparacao-publicacao`** para a etapa atual (a entrega anterior permanece em **`entrega-windows`**), clique em **Code → Download ZIP** e use **Extrair Tudo** no Windows.
 2. Instale Node.js **24** pelo site oficial <https://nodejs.org/>, caso ainda não esteja instalado.
 3. Na pasta extraída que contém `package.json`, dê dois cliques em **`INICIAR-SITE-WINDOWS.cmd`**.
 4. Aguarde a instalação e a abertura do navegador. Mantenha a janela aberta; use **Ctrl+C** para encerrar.
@@ -81,3 +81,7 @@ Para revisão jurídica, há um [briefing técnico](docs/BRIEFING-REVISAO-PRIVAC
 ## Apoio à revisão jurídica
 
 O [Agente Jurídico BM Capital](docs/AGENTE-JURIDICO.md) organiza a revisão do aviso e do fluxo WhatsApp. Suas análises são preliminares e não substituem validação profissional. Nenhuma sugestão desse agente é aplicada ao site automaticamente.
+
+## Esclarecimentos aprovados — Missão 04
+
+Aplicados os esclarecimentos sobre WhatsApp e continuidade pela equipe/vendedores no aviso preliminar **2026-10-21-r1**. Confira [RELATORIO-MISSAO-04.md](RELATORIO-MISSAO-04.md). A aplicação não foi integrada à planilha, e retenção, execução dos controles manuais e revisão profissional continuam pendentes. Nenhum deploy foi feito.

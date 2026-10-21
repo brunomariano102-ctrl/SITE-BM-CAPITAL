@@ -56,3 +56,7 @@ A redação do aviso precisa refletir a participação da equipe autorizada e a 
 Com o coordenador já indicado, definir pessoas autorizadas e acessos conforme a necessidade de atendimento, orientações de confidencialidade e procedimento de retirada de acesso. Para ações em números próprios, avaliar identificação da BM Capital, finalidade do contato, tratamento das escolhas de marketing, acesso aos registros necessários e destino dos dados quando alguém deixar a equipe. Não solicitar acesso indiscriminado às conversas pessoais dos vendedores. São recomendações a avaliar conforme a operação, não controles já existentes ou aprovados.
 
 O aviso e a aplicação não foram alterados com base apenas nesta resposta. A validação jurídica e a publicação continuam pendentes.
+
+## Aceite e continuação no site
+
+O responsável aprovou as orientações e solicitou continuidade: “Tudo aprovado! Vamos continuar com o site!”. Foram aplicados os esclarecimentos sobre WhatsApp, acesso interno e números dos vendedores, mantendo o aviso preliminar (2026-10-21-r1). A aprovação não comprova uso efetivo da planilha, backup, controle de acesso, supervisão dos números próprios ou retenção definida. A aplicação não recebe dados da planilha e não passou a registrar consentimentos.

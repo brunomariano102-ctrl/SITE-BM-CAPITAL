@@ -1,6 +1,6 @@
 # BM Capital — seu checklist de aceite
 
-Nota da preparação final: a versão do aviso foi atualizada para 2026-10-21 ao incorporar os dados institucionais. As capturas históricas da Missão 02 mostram a versão anterior.
+Nota da preparação final: a versão atual do aviso é 2026-10-21-r1, após incorporar os dados institucionais e os esclarecimentos aprovados sobre atendimento e WhatsApp. As capturas históricas da Missão 02 mostram a versão anterior.
 
 Status inicial: **aguardando sua validação**. Não marque itens somente porque os testes automatizados passaram.
 
@@ -50,7 +50,7 @@ Use somente dados fictícios, por exemplo primeiro nome **Teste**. Não inclua d
 - [ ] Ao continuar, o destino é **+55 73 99972-4985** e a mensagem está apenas preparada para revisão.
 - [ ] A mensagem contém o nome/objetivo/prazo escolhidos e **NÃO AUTORIZO** para comunicações opcionais.
 - [ ] Sem enviar, voltei ao navegador, marquei marketing e repeti: agora consta **AUTORIZO**.
-- [ ] O aviso aparece com versão **2026-10-21**, e a confirmação de envio continua sendo minha ação no WhatsApp.
+- [ ] O aviso aparece com versão **2026-10-21-r1**, e a confirmação de envio continua sendo minha ação no WhatsApp.
 - [ ] Depois de editar dados ou trocar objetivo, o link anterior de continuação desaparece; uma nova preparação usa os dados atuais.
 - [ ] Testei o link alternativo “toque aqui para continuar”, se o aplicativo não abriu automaticamente.
 - [ ] Voltei ao site sem dificuldade e descartei qualquer rascunho de teste no aplicativo.

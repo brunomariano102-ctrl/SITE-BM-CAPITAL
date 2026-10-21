@@ -6,7 +6,7 @@ As instruções reutilizáveis estão em [juridico/AGENTS.md](juridico/AGENTS.md
 
 ## Primeira análise
 
-Leia [juridico/REVISAO-INICIAL.md](juridico/REVISAO-INICIAL.md). As propostas são preliminares e não alteram o aviso atualmente servido.
+Leia [juridico/REVISAO-INICIAL.md](juridico/REVISAO-INICIAL.md). A análise inicial é histórica; após aprovação do responsável, os esclarecimentos compatíveis foram aplicados ao aviso preliminar 2026-10-21-r1. Consulte [RELATORIO-MISSAO-04.md](../RELATORIO-MISSAO-04.md) para a situação atual. A aprovação não equivale a validação profissional ou execução comprovada dos controles.
 
 ## Exemplo de pedido para continuar
 
@@ -23,4 +23,4 @@ Regras de retenção, fornecedores, atendimento de direitos, uso de marketing e 
 - [Operação informada](juridico/OPERACAO-CONFIRMADA.md).
 - [Proposta de controle manual](juridico/PROPOSTA-CONTROLE-MARKETING.md).
 - [Guia do modelo Excel](juridico/GUIA-CONTROLE-EXCEL.md), sem contatos reais.
-- [Minuta de ajustes do aviso](juridico/MINUTA-AJUSTES-AVISO.md), não aplicada.
+- [Referência dos ajustes do aviso](juridico/MINUTA-AJUSTES-AVISO.md), com a situação de aplicação registrada.
