@@ -17,3 +17,10 @@ Você também pode fornecer o texto ou comentários recebidos do advogado para o
 ## O que permanece sob decisão do responsável
 
 Regras de retenção, fornecedores, atendimento de direitos, uso de marketing e revogação precisam refletir a operação real. A validação jurídica final e uma eventual autorização de publicação são etapas distintas da criação deste agente.
+
+## Materiais para a próxima revisão
+
+- [Operação informada](juridico/OPERACAO-CONFIRMADA.md).
+- [Proposta de controle manual](juridico/PROPOSTA-CONTROLE-MARKETING.md).
+- [Guia do modelo Excel](juridico/GUIA-CONTROLE-EXCEL.md), sem contatos reais.
+- [Minuta de ajustes do aviso](juridico/MINUTA-AJUSTES-AVISO.md), não aplicada.

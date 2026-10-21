@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "sheet_names": [
+    "LEIA-ME",
+    "CONTATOS",
+    "ALTERACOES"
+  ],
+  "empty_contact_rows": 300,
+  "empty_change_rows": 300,
+  "dropdown_rules": 6,
+  "macros": false,
+  "formulas": false,
+  "external_links": false,
+  "generator_overwrite_guard": "passed",
+  "application_changes": false,
+  "excel_windows_execution": "not_executed",
+  "sha256": "89c71c6154c144431a4d76ebaabe04c72df7d398d8fd1195186c9c47df9cf1c8"
+}

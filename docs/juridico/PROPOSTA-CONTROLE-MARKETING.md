@@ -15,7 +15,13 @@ O responsável coordena privacidade/revogação. Ele e o time interno atendem; e
 5. **Respeitar revogação em qualquer canal.** Quem receber o pedido comunica ao coordenador e interrompe novas ações promocionais ao contato. O coordenador atualiza o registro e comunica a alteração aos vendedores envolvidos antes de novos envios, inclusive nos números próprios. Não criar prazo fictício de resposta ao titular.
 6. **Controlar acesso e saída da equipe.** Definir quem pode consultar/alterar o controle e como retirar acessos e tratar cópias quando alguém sair. Não exigir acesso indiscriminado às conversas pessoais dos vendedores. Como os números são próprios, os meios reais de aplicação e supervisão precisam ser definidos.
 
-## Modelo vazio
+## Modelos vazios
+
+Foi preparado também um [modelo de Excel com listas de seleção](MODELO-CONTROLE-MARKETING.xlsx), explicado no [guia](GUIA-CONTROLE-EXCEL.md). Ele permanece vazio e não executa o processo pela empresa. Antes de preencher, salve uma cópia fora do projeto/repositório; não envie dados de clientes ao GitHub.
+
+A [minuta de ajustes do aviso](MINUTA-AJUSTES-AVISO.md) foi separada do texto vigente e não foi aplicada.
+
+## Alternativa CSV
 
 [MODELO-CONTROLE-MARKETING.csv](MODELO-CONTROLE-MARKETING.csv) usa ponto e vírgula e UTF-8 com BOM para facilitar a abertura no Excel do Windows. Não contém contatos reais, exemplos que possam ser confundidos com registros ou macros. É uma estrutura de campos, sem automação ou validação de células.
 

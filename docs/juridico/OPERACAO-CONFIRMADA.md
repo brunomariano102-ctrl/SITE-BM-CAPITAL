@@ -28,7 +28,7 @@ Não foi detalhado como serão feitos a atribuição, o contato ou os registros.
 
 Ao ser perguntado sobre o registro de autorizações, recusas e pedidos para parar de receber mensagens, o responsável respondeu: “Ainda sera organizado.” O procedimento permanece em definição; não se deve descrevê-lo no aviso como controle já implementado.
 
-Foi preparada uma [proposta de fluxo manual](PROPOSTA-CONTROLE-MARKETING.md) e um modelo vazio para avaliação. Não houve integração, armazenamento de contatos reais ou adoção automática da proposta.
+Foram preparados uma [proposta de fluxo manual](PROPOSTA-CONTROLE-MARKETING.md), modelos vazios CSV/Excel e uma [minuta do aviso](MINUTA-AJUSTES-AVISO.md) para avaliação. Não houve integração, armazenamento de contatos reais ou adoção automática da proposta.
 
 ## Pontos ainda a esclarecer
 
