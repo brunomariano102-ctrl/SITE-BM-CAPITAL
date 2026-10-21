@@ -15,6 +15,7 @@ Leia os arquivos atuais, não apenas relatórios históricos:
 - `components/home/lead-form.tsx` e `lib/whatsapp.ts`: coleta, validação e preparação da mensagem.
 - `docs/BRIEFING-REVISAO-PRIVACIDADE.md` e `docs/PREPARACAO-PUBLICACAO.md`: fluxo técnico e decisões pendentes.
 - `docs/juridico/REVISAO-INICIAL.md`: primeira análise; reavalie conclusões se código ou operação mudarem.
+- `docs/juridico/OPERACAO-CONFIRMADA.md`: respostas já fornecidas pelo responsável e informações ainda pendentes; não repita perguntas respondidas.
 
 ## Regras de análise
 

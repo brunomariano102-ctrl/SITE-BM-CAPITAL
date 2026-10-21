@@ -53,6 +53,8 @@ A revogação de marketing já é mencionada no formulário e há e-mail para di
 
 ## Quatro perguntas ao responsável
 
+Atualização: o responsável confirmou atendimento por ele e pelo time interno e assumiu a coordenação de direitos/revogação. Informou um WhatsApp oficial único e possibilidade de ações comerciais dos vendedores em números próprios. Confirmou também que os vendedores receberão contatos originados do site/WhatsApp oficial. O responsável informou que o controle de autorizações, recusas e revogações ainda será organizado. Foi preparada uma proposta manual para avaliação; o procedimento de atribuição e a efetiva adoção dos controles continuam pendentes. Consulte [OPERACAO-CONFIRMADA.md](OPERACAO-CONFIRMADA.md) para não repetir perguntas já respondidas.
+
 1. **Quem atende e executa pedidos de direitos/revogação?** Quem controla WhatsApp/e-mail e quais pessoas têm acesso?
 2. **Onde os dados ficam hoje?** Há contatos salvos, exportações, anexos, planilhas ou backups? Quais critérios de retenção, restrição e descarte são praticados?
 3. **Haverá marketing nesta versão?** Como autorização/recusa será registrada e consultada antes de cada contato e atualizada após revogação?
