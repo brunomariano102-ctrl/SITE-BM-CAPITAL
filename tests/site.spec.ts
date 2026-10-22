@@ -319,7 +319,7 @@ test("responsividade: todas as páginas sem rolagem horizontal em 320–1440px",
   }
 });
 
-test("cabeçalhos de segurança e noindex preservados", async ({ page }) => {
+test("cabeçalhos de segurança e política de indexação", async ({ page }) => {
   const response = await page.goto("/");
   expect(response?.headers()["x-content-type-options"]).toBe("nosniff");
   expect(response?.headers()["x-frame-options"]).toBe("DENY");
@@ -332,6 +332,6 @@ test("cabeçalhos de segurança e noindex preservados", async ({ page }) => {
   expect(response?.headers()["x-powered-by"]).toBeUndefined();
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
     "content",
-    "noindex, nofollow",
+    (process.env.VERCEL_ENV === "production" ? "index, follow" : "noindex, nofollow"),
   );
 });

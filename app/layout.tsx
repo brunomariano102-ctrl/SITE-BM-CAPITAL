@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { site } from "../lib/site";
+import { publicIndexing } from "../lib/seo";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     "Consórcios, crédito, seguros, investimentos e planejamento com atendimento consultivo em Jequié, Bahia.",
-  robots: { index: false, follow: false },
+  robots: { index: publicIndexing, follow: publicIndexing },
   icons: { icon: "/assets/bm-capital-logo-transparente.png" },
   openGraph: {
     url: "/",

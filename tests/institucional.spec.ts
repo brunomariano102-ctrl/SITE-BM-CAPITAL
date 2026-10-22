@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 const origin = "https://www.solucoesbmcapital.com.br";
 const paths = ["/", "/privacidade", ...["consorcios", "credito", "seguros", "investimentos", "planejamento"].map(slug => `/solucoes/${slug}`)];
 
-test("URLs definitivas são específicas de cada página e mantêm noindex", async ({ page }) => {
+test("URLs definitivas são específicas de cada página e respeitam o ambiente de indexação", async ({ page }) => {
   for (const path of paths) {
     await page.goto(path);
     const url = new URL(path, origin).href;
@@ -12,7 +12,7 @@ test("URLs definitivas são específicas de cada página e mantêm noindex", asy
     expect(new URL((await page.locator('link[rel="canonical"]').getAttribute("href"))!).href).toBe(url);
     await expect(page.locator('meta[property="og:url"]')).toHaveCount(1);
     expect(new URL((await page.locator('meta[property="og:url"]').getAttribute("content"))!).href).toBe(url);
-    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", "noindex, nofollow");
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", (process.env.VERCEL_ENV === "production" ? "index, follow" : "noindex, nofollow"));
   }
 });
 
