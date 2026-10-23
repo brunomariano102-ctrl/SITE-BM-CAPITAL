@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 test("aviso explica equipe interna, números dos vendedores e controles em organização", async ({ page }) => {
   await page.goto("/privacidade");
   const text = page.locator("main");
-  await expect(text).toContainText("23/10/2026 — revisão 3");
+  await expect(text).toContainText("23/10/2026 — revisão 4");
   await expect(text).toContainText("Aviso aplicável");
   await expect(text).toContainText("Pessoas autorizadas da equipe interna");
   await expect(text).toContainText("número próprio utilizado na atividade profissional");

@@ -113,11 +113,15 @@ export default function Privacidade() {
         As preferências de análise de visitas e publicidade são opcionais e
         independentes da autorização para receber mensagens comerciais.
         Tecnologias opcionais só podem ser carregadas após a escolha
-        correspondente. Consulte as finalidades, fornecedores, prazos propostos
+        correspondente. Consulte as finalidades, fornecedores, prazos
         e mecanismos de retirada em <a href="/cookies">Cookies e preferências</a>.
-        Nesta publicação, o painel registra suas preferências, mas Google
-        Analytics, Tag Manager e Meta Pixel permanecem desativados no site.
-        Será solicitada nova escolha quando a medição for disponibilizada.
+        O Google Analytics 4, via Tag Manager, mede visitas e etapas até o WhatsApp
+        com autorização para análise. O Meta Pixel registra visitas públicas
+        com autorização para publicidade, respeitando as restrições para serviços
+        financeiros. Eventos personalizados do formulário na Meta permanecem
+        desabilitados nesta etapa. Não enviamos os dados preenchidos no
+        pré-diagnóstico a essas ferramentas. As escolhas anteriores à ativação
+        não são reaproveitadas; você pode recusar ou retirar cada categoria.
       </p>
       <h2>8. Atualizações</h2>
       <p>

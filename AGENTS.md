@@ -117,3 +117,8 @@ O responsável autorizou os aceites anteriores e esclareceu que o remarketing de
 ### Publicação autorizada de cookies — 23/10/2026
 
 O pedido atual autoriza publicar painel e política de cookies, após revisão/testes, e concluir aceite do Pixel. Não pedir novamente essa autorização. O Pixel 1710204487199305 foi criado; não foi instalado/ativado no site. Publicar somente preferências e transparência nesta entrega, com medição desativada e nova escolha obrigatória na ativação futura. Política própria BM baseada no funcionamento real; BTG foi referência de organização, sem copiar texto, credenciais ou a escolha de tornar análise obrigatória. Termos oficiais Meta aceitos sem alteração, não reescritos como contrato BM. A landing de campanha foi preservada em checkpoint local fora da publicação. Confirmar deploy público antes de afirmar que o painel aparece.
+
+
+### Ativação autorizada — checkpoint 23/10/2026
+
+O responsável autorizou ativar GA4, GTM e Pixel. A autorização atual supera as instruções históricas de manter toda medição inativa, sem liberar campanhas. Veja docs/medicao/ATIVACAO-2026-10-23.md. Criada e publicada versão 2 no GTM (painel confirmou ativa); Pixel com lista de domínio permitida e restrições financeiras preservadas. Candidata local passou em 78 testes preview + 4 de produção simulada, sem falhas, e builds/TypeScript. Sem coleta real confirmada e sem novo deploy. Login concluído pelo responsável; acesso GitHub/Vercel confirmado; seis variáveis salvas somente em Production, aguardando deploy da candidata. Não recomeçar configuração de contas nem pedir novamente aprovação genérica de ativação. Eventos personalizados Meta continuam desligados até análise específica; não afirmar exclusão de concluintes ou públicos prontos.

@@ -13,6 +13,9 @@ const enabled = process.env.NEXT_PUBLIC_MEASUREMENT_ENABLED === "true";
 const testModeRequested = process.env.NEXT_PUBLIC_MEASUREMENT_TEST_MODE === "true";
 const gtmId = process.env.NEXT_PUBLIC_GTM_ID || "";
 const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID || "";
+// Financial-service custom events await a separate review in Meta Events Manager.
+// PageView is the only Meta event released in this activation.
+const metaFunnelEnabled = process.env.NEXT_PUBLIC_META_FUNNEL_ENABLED === "true";
 const gaId = process.env.NEXT_PUBLIC_GA4_ID || "";
 const origin = "https://www.solucoesbmcapital.com.br";
 let suspended = false;
@@ -67,7 +70,7 @@ function startPixel() {
   }
 }
 export function applyPreferences(preferences: Preferences) {
-  if (!permittedEnvironment() || suspended) return;
+  if (!permittedEnvironment() || suspended || !knownPaths.has(location.pathname)) return;
   if (!preferences.analytics && !preferences.advertising) return;
   prepareUrl();
   window.dataLayer ||= [];
@@ -105,7 +108,7 @@ export function trackEvent(event: MeasurementEvent) {
   window.dataLayer.push(payload);
   if (p.advertising && window.fbq && /^\d{8,20}$/.test(pixelId)) {
     if (event === "bm_page_view") window.fbq("track", "PageView");
-    else window.fbq("trackCustom", ({ bm_campaign_view: "BMCampaignView", bm_prediagnosis_start: "BMPreDiagnosisStart",
+    else if (metaFunnelEnabled) window.fbq("trackCustom", ({ bm_campaign_view: "BMCampaignView", bm_prediagnosis_start: "BMPreDiagnosisStart",
       bm_prediagnosis_complete: "BMPreDiagnosisComplete", bm_whatsapp_click: "BMWhatsAppClick" } as const)[event]);
   }
 }
