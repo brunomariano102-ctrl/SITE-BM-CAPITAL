@@ -20,8 +20,8 @@ test("aviso identifica a controladora, mantém revisão pendente e usa versão d
   await page.goto("/privacidade");
   await expect(page.locator("main")).toContainText("BM Capital Ltda");
   await expect(page.locator("main")).toContainText("Rua José Lins do Rego, nº 32, bairro Pompilio Sampaio, Jequié, Bahia");
-  await expect(page.locator("main")).toContainText("21/10/2026");
-  await expect(page.locator("main")).toContainText("preliminar");
+  await expect(page.locator("main")).toContainText("23/10/2026");
+  await expect(page.locator("main")).toContainText("Aviso aplicável");
   await expect(page.locator("main")).toContainText("CNPJ 45.270.578/0001-04");
   const response = await request.get("/privacidade");
   expect(await response.text()).not.toContain("45.270.057/0001-04");

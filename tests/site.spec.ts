@@ -1,4 +1,14 @@
 import { expect, test, type Page } from "@playwright/test";
+import { CONSENT_VERSION } from "../lib/measurement/consent";
+import { PRIVACY_NOTICE_VERSION } from "../lib/whatsapp";
+
+// Existing functional journeys run after a visitor rejects optional cookies.
+// Dedicated consent tests exercise the untouched first visit and every choice.
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript((version) => {
+    localStorage.setItem("bm_cookie_preferences", JSON.stringify({ version, analytics: false, advertising: false, savedAt: Date.now() }));
+  }, CONSENT_VERSION);
+});
 
 declare global {
   interface Window { opened: string[]; }
@@ -101,7 +111,7 @@ test("privacidade: aviso separado e link de retorno", async ({ page }) => {
   await expect(privacyPage.getByRole("heading", { level: 1 })).toHaveText(
     "Aviso de Privacidade",
   );
-  await expect(privacyPage.locator("h2")).toHaveCount(8);
+  await expect(privacyPage.locator("main h2")).toHaveCount(8);
   await expect(privacyPage.locator("body")).toContainText(
     "não constitui consentimento geral",
   );
@@ -208,7 +218,7 @@ for (const marketing of [false, true]) {
     expect(url.searchParams.get("text")).toContain("Meu nome é João & Ana.");
     expect(url.searchParams.get("text")).toContain("Conquistar um imóvel");
     expect(url.searchParams.get("text")).toContain("Nos próximos 3 meses");
-    expect(url.searchParams.get("text")).toContain("(versão 2026-10-21-r1)");
+    expect(url.searchParams.get("text")).toContain(`(versão ${PRIVACY_NOTICE_VERSION})`);
     expect(url.searchParams.get("text")).toContain(
       `opcionais: ${marketing ? "AUTORIZO" : "NÃO AUTORIZO"}.`,
     );
@@ -231,7 +241,7 @@ for (const marketing of [false, true]) {
   });
 }
 
-test("sem rastreadores, cookies ou persistência no preenchimento", async ({
+test("sem rastreadores, cookies ou persistência dos dados preenchidos", async ({
   page,
   context,
 }) => {
@@ -242,7 +252,7 @@ test("sem rastreadores, cookies ou persistência no preenchimento", async ({
   await prepareForm(page);
   await page.locator("#marketingConsent").check();
   const storage = await page.evaluate(() => ({
-    local: localStorage.length,
+    local: Object.keys(localStorage).filter(key => key !== "bm_cookie_preferences").length,
     session: sessionStorage.length,
   }));
   expect(storage).toEqual({ local: 0, session: 0 });

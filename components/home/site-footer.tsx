@@ -21,7 +21,7 @@ export function SiteFooter() {
             bmcapitalsolucoes@gmail.com
           </a>
           <br />
-          <a href="/privacidade">Privacidade</a>
+          <a href="/privacidade">Privacidade</a><br /><a href="/cookies">Cookies e preferências</a>
         </div>
       </div>
     </footer>

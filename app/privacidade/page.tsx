@@ -29,8 +29,8 @@ export default function Privacidade() {
       <a href="/">← Voltar à BM Capital</a>
       <h1>Aviso de Privacidade</h1>
       <p>
-        <strong>Versão:</strong> {PRIVACY_NOTICE_DISPLAY_VERSION}. <strong>Status:</strong> aviso
-        preliminar, sujeito à validação jurídica antes da publicação.
+        <strong>Versão:</strong> {PRIVACY_NOTICE_DISPLAY_VERSION}. Aviso aplicável ao
+        site e aos canais de atendimento descritos abaixo.
       </p>
       <h2>1. Quem trata os dados</h2>
       <p>
@@ -88,9 +88,10 @@ export default function Privacidade() {
       </p>
       <p>
         As regras de retenção e descarte de registros, conversas e backups ainda
-        precisam ser formalizadas. Registros técnicos da futura hospedagem e
-        práticas dos fornecedores também deverão ser avaliados antes da
-        publicação. A futura integração com CRM exigirá atualização deste aviso
+        precisam ser formalizadas. A hospedagem Vercel pode processar registros
+        técnicos de acesso, como endereço IP, URL e informações do navegador,
+        para entregar e proteger o site. O formulário não inclui os dados
+        preenchidos na URL das páginas da BM Capital. A futura integração com CRM exigirá atualização deste aviso
         e controles próprios.
       </p>
       <h2>6. Direitos dos titulares</h2>
@@ -109,10 +110,14 @@ export default function Privacidade() {
       </p>
       <h2>7. Cookies e tecnologias</h2>
       <p>
-        Esta versão não implementa banner de cookies de publicidade ou
-        analytics. Antes de adicionar tecnologias de rastreamento não
-        essenciais, serão avaliados aviso, preferências e mecanismos de
-        consentimento adequados.
+        As preferências de análise de visitas e publicidade são opcionais e
+        independentes da autorização para receber mensagens comerciais.
+        Tecnologias opcionais só podem ser carregadas após a escolha
+        correspondente. Consulte as finalidades, fornecedores, prazos propostos
+        e mecanismos de retirada em <a href="/cookies">Cookies e preferências</a>.
+        Nesta publicação, o painel registra suas preferências, mas Google
+        Analytics, Tag Manager e Meta Pixel permanecem desativados no site.
+        Será solicitada nova escolha quando a medição for disponibilizada.
       </p>
       <h2>8. Atualizações</h2>
       <p>

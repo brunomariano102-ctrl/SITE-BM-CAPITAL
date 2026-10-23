@@ -1,11 +1,14 @@
 "use client";
 
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
+import { trackEvent } from "../../lib/measurement/client";
 import { objectives } from "../../lib/objectives";
 import { buildWhatsAppUrl } from "../../lib/whatsapp";
 import { useDiagnosis } from "./diagnosis-provider";
 
 export function LeadForm() {
+  const started = useRef(false);
+  const completed = useRef(false);
   const { goal, setGoal } = useDiagnosis();
   const [ready, setReady] = useState(false);
   const [submission, setSubmission] = useState<{
@@ -41,6 +44,8 @@ export function LeadForm() {
       when: String(data.get("when")),
       marketing: data.has("marketingConsent"),
     });
+    if (!completed.current) { trackEvent("bm_prediagnosis_complete"); completed.current = true; }
+    trackEvent("bm_whatsapp_click");
     setSubmission({ goal, url });
     window.open(url, "_blank", "noopener,noreferrer");
   }
@@ -50,6 +55,11 @@ export function LeadForm() {
       className="form"
       id="leadForm"
       onSubmit={submit}
+      onFocusCapture={event => {
+        if (!started.current && event.target instanceof HTMLElement && ["INPUT", "SELECT"].includes(event.target.tagName)) {
+          trackEvent("bm_prediagnosis_start"); started.current = true;
+        }
+      }}
       onChange={() => setSubmission(null)}
     >
       <h3>Pré-diagnóstico BM</h3>
@@ -150,7 +160,7 @@ export function LeadForm() {
         {currentUrl && (
           <>
             Se o WhatsApp não abriu automaticamente,{" "}
-            <a href={currentUrl} target="_blank" rel="noopener noreferrer">
+            <a href={currentUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent("bm_whatsapp_click")}>
               toque aqui para continuar
             </a>
             . Revise a mensagem antes de enviar.

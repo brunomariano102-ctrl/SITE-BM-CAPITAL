@@ -98,3 +98,22 @@ O usuário confirmou que comprou apenas o domínio no Registro.br e pediu avanç
 ## Agente de hospedagem solicitado pelo usuário
 
 Para pedidos ao Agente de Hospedagem BM Capital, leia `docs/hospedagem/AGENTS.md`, além do guia `docs/AGENTE-HOSPEDAGEM.md`. Criar o agente não equivale a criar conta/projeto, contratar plano, importar repositório, gerar preview, alterar DNS ou publicar. Use as autorizações já dadas para o escopo correspondente, sem pedi-las novamente por rotina.
+
+
+## Etapa de medição e remarketing em preparação — 22/10/2026
+
+SEO publicado em 7ec15ea, confirmado publicamente e no Search Console. O usuário depois autorizou preparar GA4 + GTM + consentimento + medição até WhatsApp e página de campanha + Pixel + eventos/públicos, com testes e revisão ANTES de publicar ou ativar campanhas. Essa autorização permite preparar armazenamento das preferências de cookies e integração controlada, mas não autoriza novos push/deploy ou publicação de contêiner/campanhas.
+
+Leia `docs/medicao/PLANO-GTM-GA4.md` e `docs/medicao/PUBLICOS-META.md`. A candidata usa feature flag desativada por padrão, IDs em branco e noindex na página de campanha. GA4 via GTM; Pixel manual no código, sem duplicação no contêiner. O painel distingue análise/publicidade e a escolha de mensagens continua separada. Não enviar dados do diagnóstico/WhatsApp em eventos nem tratar clique como contato recebido.
+
+O aviso candidato r2 modifica finalidades de tratamento e requer revisão antes de ativar. Preferência local não é um histórico auditável no servidor. Os assistentes de criação Google/Meta ficaram pendentes de aceites contratuais específicos do responsável; não afirmar contas/Pixel/públicos criados. Não usar ativos de outros negócios ou dados fictícios dos testes em produção.
+
+
+### Continuidade da medição — 23/10/2026
+
+O responsável autorizou os aceites anteriores e esclareceu que o remarketing deve abranger todo o site. GA4 G-PYPR0HEL34 e GTM-5PXJZZXF criados; retenção 2 meses sem renovação por atividade e medição otimizada desativada. Portfólio Meta BM Capital 29100514799584868 criado. Pixel geral preenchido com Serviço financeiro e sem API de Conversões; criação ainda pendente dos novos Termos das Ferramentas Comerciais. Públicos baseados em PageView global e exclusão geral de pré-diagnóstico, não limitados à landing de consórcios. Dois novos testes (desktop/mobile) de cobertura geral aprovados. Nenhum push/deploy/publicação nesta etapa. O painel de cookies continua local; não alegar que já aparece em produção.
+
+
+### Publicação autorizada de cookies — 23/10/2026
+
+O pedido atual autoriza publicar painel e política de cookies, após revisão/testes, e concluir aceite do Pixel. Não pedir novamente essa autorização. O Pixel 1710204487199305 foi criado; não foi instalado/ativado no site. Publicar somente preferências e transparência nesta entrega, com medição desativada e nova escolha obrigatória na ativação futura. Política própria BM baseada no funcionamento real; BTG foi referência de organização, sem copiar texto, credenciais ou a escolha de tornar análise obrigatória. Termos oficiais Meta aceitos sem alteração, não reescritos como contrato BM. A landing de campanha foi preservada em checkpoint local fora da publicação. Confirmar deploy público antes de afirmar que o painel aparece.

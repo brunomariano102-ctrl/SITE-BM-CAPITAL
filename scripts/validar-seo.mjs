@@ -23,6 +23,8 @@ for (const path of paths) {
   assert.ok(html.includes(`name="robots" content="${production ? 'index, follow' : 'noindex, nofollow'}"`));
 }
 assert.equal(titles.size, 7); assert.equal(descriptions.size, 7);
+const cookiesPage = await get("/cookies"); assert.equal(cookiesPage.status, 200);
+pages.set("/cookies", await cookiesPage.text());
 for (const [path, html] of pages) {
   for (const [, href] of html.matchAll(/<a\b[^>]*href="([^"]*)"/g)) {
     const target = new URL(href.replaceAll('&amp;', '&'), new URL(path, origin));

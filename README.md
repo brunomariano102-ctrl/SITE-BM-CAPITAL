@@ -93,3 +93,19 @@ O domínio foi comprado no Registro.br, segundo o responsável. A preparação p
 ## Agente de hospedagem
 
 O [Agente de Hospedagem BM Capital](docs/AGENTE-HOSPEDAGEM.md) orienta a preparação da Vercel e do Registro.br. O checklist distingue preparação, primeiro deploy e DNS; nenhum deles é automaticamente autorizado pela criação do agente.
+
+
+## Preparação de medição e remarketing — 22/10/2026 (não publicada)
+
+O SEO anterior foi publicado no commit 7ec15ea. Esta nova etapa prepara página `/campanhas/consorcios`, preferências opcionais de análise e publicidade, eventos minimizados do formulário/WhatsApp e loader controlado do Meta Pixel. GA4 será gerenciado por um único contêiner GTM; a configuração do workspace está descrita em `docs/medicao/PLANO-GTM-GA4.md`. Não há IDs reais nem ferramentas ativas por padrão. Nenhuma campanha está criada/ativada.
+
+O consentimento de cookies usa somente uma preferência local versionada, sem guardar campos do formulário; isso substitui a afirmação anterior de ausência total de armazenamento local para a versão candidata. Mensagens promocionais continuam com autorização separada. O aviso candidato foi atualizado para 2026-10-22-r2 por novas finalidades e requer revisão antes da ativação. O site publicado permanece na revisão anterior.
+
+Não copiar IDs fictícios dos testes para produção. Não publicar o contêiner GTM, o código ou a página antes da revisão e da aprovação de publicação. Assistentes Google e Meta ficaram pendentes dos aceites contratuais específicos. Veja também `docs/medicao/PUBLICOS-META.md` e `docs/medicao/RESULTADOS-TESTES.json`.
+
+
+### Publicação de preferências — 23/10/2026
+
+O responsável autorizou revisar e publicar a solicitação de cookies e aceitar os Termos das Ferramentas Comerciais Meta. Esta entrega publica o painel global e /cookies, aviso de privacidade r3 e controle local por 180 dias. Feature flag de medição permanece false; IDs do exemplo continuam em branco; nenhuma variável real é ativada. A versão da preferência é diferente entre preparação e medição ativa, exigindo nova escolha antes da futura coleta. A landing de campanha e seus testes foram preservados fora desta entrega, aguardando revisão específica. Não presumir Pixel em funcionamento pela existência do conjunto de dados.
+
+Pixel criado na Meta: 1710204487199305, BM Capital — Site institucional, no portfólio 29100514799584868, categoria Serviço financeiro, sem API de Conversões. Públicos, recebimento de eventos e restrições ainda precisam ser validados antes de ativar a medição ou campanhas. GA4/GTM também permanecem sem coleta pública.

@@ -1,3 +1,4 @@
+import { ConsentManager } from "../components/privacy/consent-manager";
 import type { Metadata } from "next";
 import "./globals.css";
 import { site } from "../lib/site";
@@ -27,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>{children}<ConsentManager deploymentEnvironment={process.env.VERCEL_ENV || "development"} /></body>
     </html>
   );
 }
