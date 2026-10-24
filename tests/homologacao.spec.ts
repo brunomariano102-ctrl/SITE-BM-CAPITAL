@@ -88,7 +88,11 @@ test("homologação: renderização, console e requisições das sete páginas",
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     await expect(page.locator('link[rel="icon"]')).toHaveAttribute("href", "/assets/bm-capital-logo-transparente.png");
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", (process.env.VERCEL_ENV === "production" ? "index, follow" : "noindex, nofollow"));
-    expect(await page.locator("img").evaluateAll(images => images.every(img => img instanceof HTMLImageElement && img.complete && img.naturalWidth > 0))).toBe(true);
+    // Images below the fold load when approached; exercise that visitor path.
+    for (const image of await page.locator("img").all()) {
+      await image.scrollIntoViewIfNeeded();
+      await expect.poll(() => image.evaluate(img => img instanceof HTMLImageElement && img.complete && img.naturalWidth > 0)).toBe(true);
+    }
     expect(await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length }))).toEqual({ local: 0, session: 0 });
   }
   expect(errors).toEqual([]);

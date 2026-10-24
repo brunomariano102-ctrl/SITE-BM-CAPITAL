@@ -1,0 +1,65 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "scrollWidth": 1440,
+    "h1": "Seu próximo passo merece uma boa estratégia.",
+    "photos": [
+      {
+        "src": "/_next/image?url=%2Fassets%2Feditorial%2Fplanejamento-pessoas.webp&w=3840&q=75",
+        "naturalWidth": 519,
+        "alt": "Cena ilustrativa de um casal planejando uma aquisição em casa."
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Feditorial%2Fplanejamento-patrimonio.webp&w=3840&q=75",
+        "naturalWidth": 530,
+        "alt": "Cena ilustrativa de projeto e chaves sobre uma mesa, com uma casa ao fundo."
+      }
+    ],
+    "headingFont": "Georgia, serif",
+    "bodyFont": "Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "h1": "Seu próximo passo merece uma boa estratégia.",
+    "photos": [
+      {
+        "src": "/_next/image?url=%2Fassets%2Feditorial%2Fplanejamento-pessoas.webp&w=3840&q=75",
+        "naturalWidth": 350,
+        "alt": "Cena ilustrativa de um casal planejando uma aquisição em casa."
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Feditorial%2Fplanejamento-patrimonio.webp&w=3840&q=75",
+        "naturalWidth": 350,
+        "alt": "Cena ilustrativa de projeto e chaves sobre uma mesa, com uma casa ao fundo."
+      }
+    ],
+    "headingFont": "Georgia, serif",
+    "bodyFont": "Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "estreito",
+    "width": 320,
+    "height": 740,
+    "scrollWidth": 320,
+    "h1": "Seu próximo passo merece uma boa estratégia.",
+    "photos": [
+      {
+        "src": "/_next/image?url=%2Fassets%2Feditorial%2Fplanejamento-pessoas.webp&w=3840&q=75",
+        "naturalWidth": 280,
+        "alt": "Cena ilustrativa de um casal planejando uma aquisição em casa."
+      },
+      {
+        "src": "/_next/image?url=%2Fassets%2Feditorial%2Fplanejamento-patrimonio.webp&w=3840&q=75",
+        "naturalWidth": 280,
+        "alt": "Cena ilustrativa de projeto e chaves sobre uma mesa, com uma casa ao fundo."
+      }
+    ],
+    "headingFont": "Georgia, serif",
+    "bodyFont": "Arial, Helvetica, sans-serif"
+  }
+]

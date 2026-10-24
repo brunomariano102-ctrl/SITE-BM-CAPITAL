@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
     <div className="hero" id="inicio">
       <div className="wrap hero-grid">
-        <div>
+        <div className="hero-copy">
           <div className="eyebrow">
             BM Capital · Soluções financeiras inteligentes
           </div>
@@ -23,25 +25,33 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <aside className="hero-side">
+        <figure className="hero-visual">
+          <Image
+            src="/assets/editorial/planejamento-pessoas.webp"
+            alt="Cena ilustrativa de um casal planejando uma aquisição em casa."
+            width={1440}
+            height={960}
+            sizes="(max-width: 620px) calc(100vw - 40px), (max-width: 960px) calc(100vw - 64px), 520px"
+            priority
+          />
+          <figcaption>Imagem ilustrativa gerada por IA.</figcaption>
+        </figure>
+      </div>
+      <aside className="wrap hero-journey" aria-labelledby="jornada-titulo">
+        <div>
           <div className="eyebrow">Uma jornada feita para você</div>
-          <h2>Decisões financeiras começam com boas perguntas.</h2>
+          <h2 id="jornada-titulo">Decisões financeiras começam com boas perguntas.</h2>
           <p>
             Atendimento consultivo, digital e personalizado, com reuniões
             externas mediante agendamento.
           </p>
-          <div className="line"></div>
-          <div className="step">
-            <b>01</b> Conte seu objetivo
-          </div>
-          <div className="step">
-            <b>02</b> Faça um pré-diagnóstico
-          </div>
-          <div className="step">
-            <b>03</b> Converse com a BM Capital
-          </div>
-        </aside>
-      </div>
+        </div>
+        <ol>
+          <li><span>01</span> Conte seu objetivo</li>
+          <li><span>02</span> Faça um pré-diagnóstico</li>
+          <li><span>03</span> Converse com a BM Capital</li>
+        </ol>
+      </aside>
     </div>
   );
 }

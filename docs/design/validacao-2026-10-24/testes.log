@@ -1,0 +1,106 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> bm-capital-site@0.9.0 test:e2e
+> playwright test
+
+[WebServer] (node:31) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[WebServer] (node:44) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 82 tests using 2 workers
+
+(node:65) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:64) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/cookies-publicacao.spec.ts:30:5 › aceitar preferências respeita a liberação e o ambiente da medição (1.0s)
+  ✓   3 [desktop] › tests/cookies-publicacao.spec.ts:49:5 › outra versão de consentimento exige nova escolha e política distingue fornecedores (348ms)
+  ✓   2 [desktop] › tests/cookies-publicacao.spec.ts:6:5 › painel publicado oferece escolha livre em todas as páginas e preserva recusa (1.7s)
+  ✓   4 [desktop] › tests/homologacao.spec.ts:5:5 › homologação: todos os links internos e âncoras possuem destino (2.9s)
+  ✓   6 [desktop] › tests/homologacao.spec.ts:47:7 › homologação: abertura real de popup e fallback interceptados, marketing false (1.4s)
+  ✓   5 [desktop] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona o título da seção abaixo do cabeçalho (5.3s)
+  ✓   7 [desktop] › tests/homologacao.spec.ts:47:7 › homologação: abertura real de popup e fallback interceptados, marketing true (1.5s)
+  ✓   8 [desktop] › tests/homologacao.spec.ts:78:5 › homologação: renderização, console e requisições das sete páginas (1.0s)
+  ✓   9 [desktop] › tests/institucional.spec.ts:6:5 › URLs definitivas são específicas de cada página e respeitam o ambiente de indexação (769ms)
+  -  11 [desktop] › tests/medicao-ativacao.spec.ts:27:5 › Pixel geral cobre Home e todas as soluções, preserva consentimento e exclui rotas inválidas
+  ✓  10 [desktop] › tests/institucional.spec.ts:19:5 › aviso identifica a controladora, mantém revisão pendente e usa versão da mensagem (277ms)
+  -  13 [desktop] › tests/medicao-ativacao.spec.ts:66:5 › análise aceita sem publicidade; eventos minimizados e conclusão não equivale a lead
+  -  14 [desktop] › tests/medicao-ativacao.spec.ts:93:5 › publicidade aceita sem análise; Pixel manual e nenhuma correspondência avançada
+  -  15 [desktop] › tests/medicao-ativacao.spec.ts:114:5 › retirada de consentimento recarrega, remove cookies opcionais e bloqueia novos carregamentos
+  ✓  16 [desktop] › tests/medicao-ativacao.spec.ts:131:5 › preferência inválida ou expirada não autoriza ferramentas (409ms)
+  ✓  17 [desktop] › tests/medicao-ativacao.spec.ts:140:5 › armazenamento indisponível não libera coleta (445ms)
+  -  18 [desktop] › tests/medicao-ativacao.spec.ts:149:5 › revogação em outra aba interrompe os scripts desta aba
+  ✓  12 [desktop] › tests/medicao-ativacao.spec.ts:48:5 › primeira visita e recusa não carregam fornecedores; atendimento continua disponível (1.4s)
+  -  19 [desktop] › tests/medicao-ativacao.spec.ts:164:5 › preferência que expira em página aberta interrompe fornecedores
+  -  20 [desktop] › tests/medicao-ativacao.spec.ts:180:5 › produção não aceita modo de teste nem coleta em localhost
+  -  21 [desktop] › tests/medicao-ativacao.spec.ts:191:5 › produção permite ferramentas apenas com consentimento em host oficial simulado
+  ✓  23 [desktop] › tests/privacidade-fluxo.spec.ts:3:5 › aviso explica equipe interna, números dos vendedores e controles em organização (272ms)
+  ✓  22 [desktop] › tests/metadados.spec.ts:3:5 › cada solução tem descrição e prévia próprias, respeitando o ambiente de indexação (605ms)
+  ✓  24 [desktop] › tests/privacidade-fluxo.spec.ts:18:5 › formulário informa abertura do serviço antes do envio, mantendo escolhas separadas (438ms)
+  ✓  25 [desktop] › tests/site.spec.ts:47:7 › solução consorcios: conteúdo, título e retorno (511ms)
+  ✓  26 [desktop] › tests/site.spec.ts:47:7 › solução credito: conteúdo, título e retorno (557ms)
+  ✓  27 [desktop] › tests/site.spec.ts:47:7 › solução seguros: conteúdo, título e retorno (601ms)
+  ✓  28 [desktop] › tests/site.spec.ts:47:7 › solução investimentos: conteúdo, título e retorno (730ms)
+  ✓  29 [desktop] › tests/site.spec.ts:47:7 › solução planejamento: conteúdo, título e retorno (574ms)
+  ✓  31 [desktop] › tests/site.spec.ts:103:5 › privacidade: aviso separado e link de retorno (599ms)
+  ✓  32 [desktop] › tests/site.spec.ts:125:5 › rotas inválidas, inclusive propriedades de protótipo, retornam 404 (199ms)
+  ✓  30 [desktop] › tests/site.spec.ts:62:5 › home: navegação, cinco soluções e ativos institucionais (1.5s)
+  ✓  34 [desktop] › tests/site.spec.ts:153:5 › formulário: obrigatórios, espaços em branco e ciência do aviso (634ms)
+  ✓  35 [desktop] › tests/site.spec.ts:204:7 › WhatsApp: marketing recusado, codificação e fallback (2.4s)
+  ✓  33 [desktop] › tests/site.spec.ts:135:5 › objetivos preenchem o formulário sem enviar dados (5.7s)
+  ✓  36 [desktop] › tests/site.spec.ts:204:7 › WhatsApp: marketing autorizado, codificação e fallback (2.4s)
+  ✓  38 [desktop] › tests/site.spec.ts:271:5 › sem JavaScript: formulário não transmite dados por GET (522ms)
+  ✓  37 [desktop] › tests/site.spec.ts:244:5 › sem rastreadores, cookies ou persistência dos dados preenchidos (1.3s)
+  ✓  39 [desktop] › tests/site.spec.ts:286:5 › menu mobile: abre, fecha por link/Escape e não captura Escape fora do menu (620ms)
+  ✓  41 [desktop] › tests/site.spec.ts:332:5 › cabeçalhos de segurança e política de indexação (432ms)
+(node:914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  40 [desktop] › tests/site.spec.ts:310:5 › responsividade: todas as páginas sem rolagem horizontal em 320–1440px (1.9s)
+(node:993) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  42 [mobile] › tests/cookies-publicacao.spec.ts:6:5 › painel publicado oferece escolha livre em todas as páginas e preserva recusa (1.5s)
+  ✓  44 [mobile] › tests/cookies-publicacao.spec.ts:49:5 › outra versão de consentimento exige nova escolha e política distingue fornecedores (388ms)
+  ✓  43 [mobile] › tests/cookies-publicacao.spec.ts:30:5 › aceitar preferências respeita a liberação e o ambiente da medição (1.1s)
+  ✓  45 [mobile] › tests/homologacao.spec.ts:5:5 › homologação: todos os links internos e âncoras possuem destino (2.7s)
+  ✓  47 [mobile] › tests/homologacao.spec.ts:47:7 › homologação: abertura real de popup e fallback interceptados, marketing false (3.7s)
+  ✓  46 [mobile] › tests/homologacao.spec.ts:23:5 › homologação: cada link do menu posiciona o título da seção abaixo do cabeçalho (5.9s)
+  ✓  49 [mobile] › tests/homologacao.spec.ts:78:5 › homologação: renderização, console e requisições das sete páginas (1.0s)
+  ✓  50 [mobile] › tests/institucional.spec.ts:6:5 › URLs definitivas são específicas de cada página e respeitam o ambiente de indexação (702ms)
+  ✓  51 [mobile] › tests/institucional.spec.ts:19:5 › aviso identifica a controladora, mantém revisão pendente e usa versão da mensagem (280ms)
+  -  52 [mobile] › tests/medicao-ativacao.spec.ts:27:5 › Pixel geral cobre Home e todas as soluções, preserva consentimento e exclui rotas inválidas
+  ✓  48 [mobile] › tests/homologacao.spec.ts:47:7 › homologação: abertura real de popup e fallback interceptados, marketing true (3.7s)
+  -  54 [mobile] › tests/medicao-ativacao.spec.ts:66:5 › análise aceita sem publicidade; eventos minimizados e conclusão não equivale a lead
+  -  55 [mobile] › tests/medicao-ativacao.spec.ts:93:5 › publicidade aceita sem análise; Pixel manual e nenhuma correspondência avançada
+  -  56 [mobile] › tests/medicao-ativacao.spec.ts:114:5 › retirada de consentimento recarrega, remove cookies opcionais e bloqueia novos carregamentos
+  ✓  53 [mobile] › tests/medicao-ativacao.spec.ts:48:5 › primeira visita e recusa não carregam fornecedores; atendimento continua disponível (2.0s)
+  ✓  57 [mobile] › tests/medicao-ativacao.spec.ts:131:5 › preferência inválida ou expirada não autoriza ferramentas (488ms)
+  -  59 [mobile] › tests/medicao-ativacao.spec.ts:149:5 › revogação em outra aba interrompe os scripts desta aba
+  -  60 [mobile] › tests/medicao-ativacao.spec.ts:164:5 › preferência que expira em página aberta interrompe fornecedores
+  ✓  58 [mobile] › tests/medicao-ativacao.spec.ts:140:5 › armazenamento indisponível não libera coleta (443ms)
+  -  61 [mobile] › tests/medicao-ativacao.spec.ts:180:5 › produção não aceita modo de teste nem coleta em localhost
+  -  62 [mobile] › tests/medicao-ativacao.spec.ts:191:5 › produção permite ferramentas apenas com consentimento em host oficial simulado
+  ✓  64 [mobile] › tests/privacidade-fluxo.spec.ts:3:5 › aviso explica equipe interna, números dos vendedores e controles em organização (328ms)
+  ✓  63 [mobile] › tests/metadados.spec.ts:3:5 › cada solução tem descrição e prévia próprias, respeitando o ambiente de indexação (649ms)
+  ✓  65 [mobile] › tests/privacidade-fluxo.spec.ts:18:5 › formulário informa abertura do serviço antes do envio, mantendo escolhas separadas (411ms)
+  ✓  66 [mobile] › tests/site.spec.ts:47:7 › solução consorcios: conteúdo, título e retorno (715ms)
+  ✓  67 [mobile] › tests/site.spec.ts:47:7 › solução credito: conteúdo, título e retorno (735ms)
+  ✓  68 [mobile] › tests/site.spec.ts:47:7 › solução seguros: conteúdo, título e retorno (731ms)
+  ✓  69 [mobile] › tests/site.spec.ts:47:7 › solução investimentos: conteúdo, título e retorno (761ms)
+  ✓  70 [mobile] › tests/site.spec.ts:47:7 › solução planejamento: conteúdo, título e retorno (653ms)
+  ✓  72 [mobile] › tests/site.spec.ts:103:5 › privacidade: aviso separado e link de retorno (604ms)
+  ✓  73 [mobile] › tests/site.spec.ts:125:5 › rotas inválidas, inclusive propriedades de protótipo, retornam 404 (128ms)
+  ✓  71 [mobile] › tests/site.spec.ts:62:5 › home: navegação, cinco soluções e ativos institucionais (1.6s)
+  ✓  75 [mobile] › tests/site.spec.ts:153:5 › formulário: obrigatórios, espaços em branco e ciência do aviso (1.8s)
+  ✓  76 [mobile] › tests/site.spec.ts:204:7 › WhatsApp: marketing recusado, codificação e fallback (5.0s)
+  ✓  74 [mobile] › tests/site.spec.ts:135:5 › objetivos preenchem o formulário sem enviar dados (7.8s)
+  ✓  78 [mobile] › tests/site.spec.ts:244:5 › sem rastreadores, cookies ou persistência dos dados preenchidos (1.9s)
+  ✓  79 [mobile] › tests/site.spec.ts:271:5 › sem JavaScript: formulário não transmite dados por GET (808ms)
+  ✓  80 [mobile] › tests/site.spec.ts:286:5 › menu mobile: abre, fecha por link/Escape e não captura Escape fora do menu (1.2s)
+  ✓  77 [mobile] › tests/site.spec.ts:204:7 › WhatsApp: marketing autorizado, codificação e fallback (5.0s)
+  ✓  82 [mobile] › tests/site.spec.ts:332:5 › cabeçalhos de segurança e política de indexação (615ms)
+  ✓  81 [mobile] › tests/site.spec.ts:310:5 › responsividade: todas as páginas sem rolagem horizontal em 320–1440px (2.0s)
+
+  16 skipped
+  66 passed (52.9s)
