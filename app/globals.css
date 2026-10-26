@@ -62,3 +62,13 @@
 .detail-body .btn-outline { color: var(--gold-text); }
 .detail-body .btn-outline:hover { color: var(--navy); }
 .detail-body .detail-next-step { font-size: 13px; color: var(--muted); line-height: 1.7; margin-top: 20px; }
+
+/* Compact questions: answers stay closed until the visitor opens them. */
+.faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start; }
+.faq-list details { border-bottom: 1px solid #d8cbb4; }
+.faq-list details:first-child { border-top: 1px solid #d8cbb4; }
+.faq-list summary { padding: 22px 4px; font-size: 16px; line-height: 1.5; cursor: pointer; }
+.faq-list summary::marker { color: var(--gold-text); }
+.faq-list summary:focus-visible { outline: 2px solid var(--gold-text); outline-offset: 3px; }
+.faq-list p { margin: 0; padding: 0 4px 22px; font-size: 14px; line-height: 1.8; color: var(--muted); }
+@media (max-width: 960px) { .faq-grid { grid-template-columns: 1fr; gap: 16px; } }

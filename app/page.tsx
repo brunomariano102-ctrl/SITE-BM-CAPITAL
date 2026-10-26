@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { AboutSection } from "../components/home/about-section";
 import { ContactSection } from "../components/home/contact-section";
 import { DiagnosisProvider } from "../components/home/diagnosis-provider";
+import { FaqSection } from "../components/home/faq-section";
 import { Hero } from "../components/home/hero";
 import { MethodSection } from "../components/home/method-section";
 import { ObjectivesSection } from "../components/home/objectives-section";
@@ -21,6 +22,7 @@ export default function Home() {
         <SolutionsSection />
         <MethodSection />
         <AboutSection />
+        <FaqSection />
         <ContactSection />
       </main>
       <SiteFooter />
