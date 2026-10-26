@@ -35,7 +35,7 @@ export function AboutSection() {
               “Não começamos pelo produto.{" "}
               <span style={{ color: "#ac8347" }}>Começamos pelo objetivo.</span>”
             </div>
-            <p className="image-credit">Imagem ilustrativa gerada por IA.</p>
+            <p className="image-credit">Imagem ilustrativa. Pessoas fictícias.</p>
           </figcaption>
         </figure>
       </div>

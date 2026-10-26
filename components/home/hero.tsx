@@ -35,7 +35,7 @@ export function Hero() {
             sizes="(max-width: 620px) calc(100vw - 40px), (max-width: 960px) calc(100vw - 64px), 520px"
             priority
           />
-          <figcaption>Imagem ilustrativa gerada por IA.</figcaption>
+          <figcaption>Imagem ilustrativa. Pessoas fictícias.</figcaption>
         </figure>
       </div>
       <aside className="wrap hero-journey" aria-labelledby="jornada-titulo">
