@@ -18,6 +18,6 @@ export function buildWhatsAppUrl({
   when,
   marketing,
 }: DiagnosisMessage) {
-  const message = `Olá, BM Capital! Meu nome é ${name.trim()}. Gostaria de solicitar o Diagnóstico BM. Meu objetivo é: ${objective}. Meu prazo é: ${when}. Li o Aviso de Privacidade (versão ${PRIVACY_NOTICE_VERSION}). Comunicações comerciais opcionais: ${marketing ? "AUTORIZO" : "NÃO AUTORIZO"}. Esta mensagem é enviada somente após minha confirmação no WhatsApp.`;
+  const message = `Olá, BM Capital! Meu nome é ${name.trim()}. Gostaria de solicitar o pré-diagnóstico BM. Meu objetivo é: ${objective}. Meu prazo é: ${when}. Li o Aviso de Privacidade (versão ${PRIVACY_NOTICE_VERSION}). Comunicações comerciais opcionais: ${marketing ? "AUTORIZO" : "NÃO AUTORIZO"}. Esta mensagem é enviada somente após minha confirmação no WhatsApp.`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
