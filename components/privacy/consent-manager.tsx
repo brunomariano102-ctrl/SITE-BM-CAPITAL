@@ -81,13 +81,13 @@ export function ConsentManager({ deploymentEnvironment }: { deploymentEnvironmen
             }
           }}>
           <h2 id="bm-cookie-title">{details ? "Suas preferências de cookies" : "Uso de cookies"}</h2>
-          {details ? <p>Você pode permitir ferramentas opcionais para analisar visitas ou personalizar anúncios. Recusar não impede navegar ou solicitar atendimento. <a href="/cookies">Conheça os usos e prazos</a>.</p> : <p>Com sua autorização, usamos cookies e tecnologias semelhantes para analisar visitas e personalizar anúncios. Consulte nossa <a href="/cookies">Política de cookies</a>.</p>}
+          {details ? <p>Escolha os cookies que deseja permitir. Recusar não impede navegar ou solicitar atendimento. <a href="/cookies">Política de cookies</a>.</p> : <p>Usamos cookies para analisar visitas e personalizar anúncios. Saiba mais na <a href="/cookies">Política de cookies</a>.</p>}
           {details && process.env.NEXT_PUBLIC_MEASUREMENT_ENABLED !== "true" && <p>As ferramentas de análise e publicidade ainda não estão ativas. Quando forem ativadas, pediremos uma nova escolha.</p>}
           {details && <>
-            <div className="bm-cookie-category"><strong>Necessários</strong><span>Sempre ativos. Guardamos apenas suas preferências neste navegador.</span></div>
-            <label className="bm-cookie-category"><input type="checkbox" checked={draft.analytics} onChange={e => setDraft({ ...draft, analytics: e.target.checked })} /><span><strong>Análise de visitas — Google Analytics</strong> Ajuda a entender páginas acessadas e etapas até a abertura do WhatsApp.</span></label>
-            <label className="bm-cookie-category"><input type="checkbox" checked={draft.advertising} onChange={e => setDraft({ ...draft, advertising: e.target.checked })} /><span><strong>Publicidade — Meta Pixel</strong> Permite medir anúncios e formar públicos para novas exibições, conforme as regras da Meta.</span></label>
-            <p>Essas escolhas são independentes da autorização para receber mensagens comerciais. Você pode alterá-las aqui a qualquer momento. Ao retirar uma permissão, a página será recarregada e os dados não enviados do formulário não serão guardados.</p>
+            <div className="bm-cookie-category"><strong>Necessários</strong><span>Sempre ativos para guardar suas preferências.</span></div>
+            <label className="bm-cookie-category"><input type="checkbox" checked={draft.analytics} onChange={e => setDraft({ ...draft, analytics: e.target.checked })} /><span><strong>Análise de visitas — Google Analytics</strong> Mede visitas e o uso do site.</span></label>
+            <label className="bm-cookie-category"><input type="checkbox" checked={draft.advertising} onChange={e => setDraft({ ...draft, advertising: e.target.checked })} /><span><strong>Publicidade — Meta Pixel</strong> Mede e personaliza anúncios.</span></label>
+            <p>As escolhas são independentes da autorização para receber mensagens comerciais. Você pode alterá-las a qualquer momento. Ao retirar uma permissão, a página recarrega e os campos não enviados são descartados.</p>
           </>}
           {error && <p role="alert">{error}</p>}
           {!details && <div className="bm-cookie-manage-row"><button className="bm-cookie-manage" onClick={() => setDetails(true)}>Gerenciar cookies</button></div>}
