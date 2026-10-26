@@ -24,8 +24,8 @@ export function AboutSection() {
         </div>
         <figure className="about-visual">
           <Image
-            src="/assets/editorial/planejamento-patrimonio.webp"
-            alt="Cena ilustrativa de projeto e chaves sobre uma mesa, com uma casa ao fundo."
+            src="/assets/editorial/planejamento-empreendedora.webp"
+            alt="Cena ilustrativa de uma empreendedora planejando atividades em um pequeno negócio, com caderno e computador."
             width={1200}
             height={900}
             sizes="(max-width: 620px) calc(100vw - 40px), (max-width: 960px) calc(100vw - 64px), 530px"

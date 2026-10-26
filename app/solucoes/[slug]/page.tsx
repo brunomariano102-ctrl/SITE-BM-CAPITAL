@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { SiteHeader } from "../../../components/home/site-header";
+import { SiteFooter } from "../../../components/home/site-footer";
+import { preDiagnosisCallToAction, socialImage } from "../../../lib/brand";
 const solutions: Record<
   string,
   { title: string; intro: string; points: string[]; note: string }
@@ -81,6 +84,7 @@ export async function generateMetadata({
       description: item.intro,
       locale: "pt_BR",
       type: "website",
+      images: [socialImage],
     },
   };
 }
@@ -93,6 +97,8 @@ export default async function SolutionPage({
   if (!Object.hasOwn(solutions, slug)) notFound();
   const item = solutions[slug];
   return (
+    <>
+    <SiteHeader home={false} />
     <main className="detail-main">
       <section className="detail-hero">
         <div className="wrap">
@@ -119,18 +125,23 @@ export default async function SolutionPage({
           </p>
           <div className="detail-actions">
             <a className="btn" href="/#contato">
-              Solicitar Diagnóstico BM ↗
+              {preDiagnosisCallToAction}
             </a>
             <a
               className="btn btn-outline"
-              style={{ color: "#735421" }}
               href="/#solucoes"
             >
               Ver outras soluções
             </a>
           </div>
+          <p className="detail-next-step">
+            Ao continuar, você poderá revisar a mensagem no WhatsApp antes de
+            enviá-la à nossa equipe.
+          </p>
         </div>
       </section>
     </main>
+    <SiteFooter />
+    </>
   );
 }

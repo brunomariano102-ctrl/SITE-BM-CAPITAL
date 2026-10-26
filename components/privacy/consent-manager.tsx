@@ -80,9 +80,9 @@ export function ConsentManager({ deploymentEnvironment }: { deploymentEnvironmen
               else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
             }
           }}>
-          <h2 id="bm-cookie-title">Sua privacidade, suas escolhas</h2>
-          <p>Você pode permitir ferramentas opcionais para analisar visitas ou personalizar anúncios. Recusar não impede navegar ou solicitar atendimento. <a href="/cookies">Conheça os usos e prazos</a>.</p>
-          {process.env.NEXT_PUBLIC_MEASUREMENT_ENABLED !== "true" && <p>As ferramentas de análise e publicidade ainda não estão ativas. Quando forem ativadas, pediremos uma nova escolha.</p>}
+          <h2 id="bm-cookie-title">{details ? "Suas preferências de cookies" : "Uso de cookies"}</h2>
+          {details ? <p>Você pode permitir ferramentas opcionais para analisar visitas ou personalizar anúncios. Recusar não impede navegar ou solicitar atendimento. <a href="/cookies">Conheça os usos e prazos</a>.</p> : <p>Com sua autorização, usamos cookies e tecnologias semelhantes para analisar visitas e personalizar anúncios. Consulte nossa <a href="/cookies">Política de cookies</a>.</p>}
+          {details && process.env.NEXT_PUBLIC_MEASUREMENT_ENABLED !== "true" && <p>As ferramentas de análise e publicidade ainda não estão ativas. Quando forem ativadas, pediremos uma nova escolha.</p>}
           {details && <>
             <div className="bm-cookie-category"><strong>Necessários</strong><span>Sempre ativos. Guardamos apenas suas preferências neste navegador.</span></div>
             <label className="bm-cookie-category"><input type="checkbox" checked={draft.analytics} onChange={e => setDraft({ ...draft, analytics: e.target.checked })} /><span><strong>Análise de visitas — Google Analytics</strong> Ajuda a entender páginas acessadas e etapas até a abertura do WhatsApp.</span></label>
@@ -90,10 +90,11 @@ export function ConsentManager({ deploymentEnvironment }: { deploymentEnvironmen
             <p>Essas escolhas são independentes da autorização para receber mensagens comerciais. Você pode alterá-las aqui a qualquer momento. Ao retirar uma permissão, a página será recarregada e os dados não enviados do formulário não serão guardados.</p>
           </>}
           {error && <p role="alert">{error}</p>}
+          {!details && <div className="bm-cookie-manage-row"><button className="bm-cookie-manage" onClick={() => setDetails(true)}>Gerenciar cookies</button></div>}
           <div className="bm-cookie-actions">
-            <button onClick={() => choose(false, false)}>Rejeitar opcionais</button>
-            <button onClick={() => choose(true, true)}>Aceitar opcionais</button>
-            {details ? <button onClick={() => choose(draft.analytics, draft.advertising)}>Salvar preferências</button> : <button onClick={() => setDetails(true)}>Personalizar</button>}
+            <button onClick={() => choose(false, false)}>Rejeitar cookies</button>
+            <button onClick={() => choose(true, true)}>Aceitar cookies</button>
+            {details && <button onClick={() => choose(draft.analytics, draft.advertising)}>Salvar preferências</button>}
           </div>
           {details && <button className="bm-cookie-close" onClick={() => { setDetails(false); if (choice) setVisible(false); }}>Voltar</button>}
         </div>

@@ -29,7 +29,7 @@ test("Pixel geral cobre Home e todas as soluções, preserva consentimento e exc
   const requests = await intercept(page);
   await page.goto("/");
   expect(requests).toEqual([]);
-  await page.getByRole("button", { name: "Personalizar", exact: true }).click();
+  await page.getByRole("button", { name: "Gerenciar cookies", exact: true }).click();
   const dialog = page.getByRole("dialog");
   await dialog.getByRole("checkbox", { name: /Publicidade/ }).check();
   await dialog.getByRole("button", { name: "Salvar preferências" }).click();
@@ -48,11 +48,11 @@ test("Pixel geral cobre Home e todas as soluções, preserva consentimento e exc
 test("primeira visita e recusa não carregam fornecedores; atendimento continua disponível", async ({ page }) => {
   const requests = await intercept(page);
   await page.goto(campaign);
-  await expect(page.getByRole("heading", { name: "Sua privacidade, suas escolhas" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Uso de cookies" })).toBeVisible();
   expect(await layer(page)).toEqual([]);
   expect(requests).toEqual([]);
   expect(await page.evaluate(() => localStorage.length)).toBe(0);
-  await page.getByRole("button", { name: "Rejeitar opcionais", exact: true }).click();
+  await page.getByRole("button", { name: "Rejeitar cookies", exact: true }).click();
   await fill(page);
   await page.getByRole("button", { name: "Continuar pelo WhatsApp ↗" }).click();
   await expect(page.locator("#feedback")).toBeVisible();
@@ -67,7 +67,7 @@ test("análise aceita sem publicidade; eventos minimizados e conclusão não equ
   test.skip(!active, "Requer build de medição com IDs fictícios e interceptação.");
   const requests = await intercept(page);
   await page.goto(campaign + "?utm_source=instagram&utm_medium=paid_social&utm_campaign=bm_consorcios_01&nome=MariaSegredo&telefone=73999999999#segredo");
-  await page.getByRole("button", { name: "Personalizar", exact: true }).click();
+  await page.getByRole("button", { name: "Gerenciar cookies", exact: true }).click();
   const dialog = page.getByRole("dialog");
   await expect(dialog.locator("input:checked")).toHaveCount(0);
   await dialog.getByRole("checkbox", { name: /Análise de visitas/ }).check();
@@ -94,7 +94,7 @@ test("publicidade aceita sem análise; Pixel manual e nenhuma correspondência a
   test.skip(!active, "Requer build interceptado de medição.");
   const requests = await intercept(page);
   await page.goto(campaign);
-  await page.getByRole("button", { name: "Personalizar", exact: true }).click();
+  await page.getByRole("button", { name: "Gerenciar cookies", exact: true }).click();
   await page.getByRole("checkbox", { name: /Publicidade — Meta/ }).check();
   await page.getByRole("button", { name: "Salvar preferências" }).click();
   await expect(page.locator("#bm-meta-pixel")).toHaveCount(1);
@@ -115,12 +115,12 @@ test("retirada de consentimento recarrega, remove cookies opcionais e bloqueia n
   test.skip(!active, "Requer build interceptado de medição.");
   const requests = await intercept(page);
   await page.goto(campaign);
-  await page.getByRole("button", { name: "Aceitar opcionais", exact: true }).click();
+  await page.getByRole("button", { name: "Aceitar cookies", exact: true }).click();
   await expect(page.locator("#bm-meta-pixel")).toHaveCount(1);
   await page.evaluate(() => { document.cookie = "_fbp=test; Path=/"; document.cookie = "_ga=test; Path=/"; document.cookie = "necessary=test; Path=/"; });
   const count = requests.length;
   await page.getByRole("button", { name: "Preferências de cookies", exact: true }).click();
-  await page.getByRole("button", { name: "Rejeitar opcionais", exact: true }).click();
+  await page.getByRole("button", { name: "Rejeitar cookies", exact: true }).click();
   await expect(page.getByRole("button", { name: "Preferências de cookies", exact: true })).toBeVisible();
   await expect(page.locator("#bm-gtm, #bm-meta-pixel")).toHaveCount(0);
   expect(requests).toHaveLength(count);
@@ -132,7 +132,7 @@ test("preferência inválida ou expirada não autoriza ferramentas", async ({ pa
   const requests = await intercept(page);
   await page.addInitScript((version) => localStorage.setItem("bm_cookie_preferences", JSON.stringify({ version, analytics: true, advertising: true, savedAt: Date.now() - 181 * 86400000 })), CONSENT_VERSION);
   await page.goto(campaign);
-  await expect(page.getByRole("button", { name: "Rejeitar opcionais", exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Rejeitar cookies", exact: true })).toBeVisible();
   expect(requests).toEqual([]);
   expect(await layer(page)).toEqual([]);
 });
@@ -141,7 +141,7 @@ test("armazenamento indisponível não libera coleta", async ({ page }) => {
   const requests = await intercept(page);
   await page.addInitScript(() => { Storage.prototype.setItem = () => { throw new Error("Storage denied for test"); }; });
   await page.goto(campaign);
-  await page.getByRole("button", { name: "Aceitar opcionais", exact: true }).click();
+  await page.getByRole("button", { name: "Aceitar cookies", exact: true }).click();
   await expect(page.locator(".bm-cookie-panel [role=alert]")).toContainText("Não foi possível salvar");
   expect(requests).toEqual([]);
 });
@@ -150,12 +150,12 @@ test("revogação em outra aba interrompe os scripts desta aba", async ({ page, 
   test.skip(!active, "Requer build interceptado de medição.");
   await intercept(page);
   await page.goto(campaign);
-  await page.getByRole("button", { name: "Aceitar opcionais", exact: true }).click();
+  await page.getByRole("button", { name: "Aceitar cookies", exact: true }).click();
   await expect(page.locator("#bm-meta-pixel")).toHaveCount(1);
   const other = await context.newPage();
   await other.goto("/cookies");
   await other.getByRole("button", { name: "Preferências de cookies", exact: true }).click();
-  await other.getByRole("button", { name: "Rejeitar opcionais", exact: true }).click();
+  await other.getByRole("button", { name: "Rejeitar cookies", exact: true }).click();
   await expect(page.locator("#bm-gtm, #bm-meta-pixel")).toHaveCount(0);
   await expect(other.locator("#bm-gtm, #bm-meta-pixel")).toHaveCount(0);
   await other.close();
@@ -172,7 +172,7 @@ test("preferência que expira em página aberta interrompe fornecedores", async 
   await expect(page.locator("#bm-meta-pixel")).toHaveCount(1);
   const count = requests.length;
   await page.clock.fastForward(6000);
-  await expect(page.getByRole("button", { name: "Rejeitar opcionais", exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Rejeitar cookies", exact: true })).toBeVisible();
   await expect(page.locator("#bm-gtm, #bm-meta-pixel")).toHaveCount(0);
   expect(requests).toHaveLength(count);
 });
@@ -181,7 +181,7 @@ test("produção não aceita modo de teste nem coleta em localhost", async ({ pa
   test.skip(process.env.VERCEL_ENV !== "production", "Verificação exclusiva do build de produção.");
   const requests = await intercept(page);
   await page.goto(campaign);
-  await page.getByRole("button", { name: "Aceitar opcionais", exact: true }).click();
+  await page.getByRole("button", { name: "Aceitar cookies", exact: true }).click();
   await fill(page);
   await page.getByRole("button", { name: "Continuar pelo WhatsApp ↗" }).click();
   expect(requests).toEqual([]);
@@ -198,9 +198,9 @@ test("produção permite ferramentas apenas com consentimento em host oficial si
     return route.fulfill({ response });
   });
   await page.goto("https://www.solucoesbmcapital.com.br" + campaign);
-  await expect(page.getByRole("button", { name: "Aceitar opcionais", exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Aceitar cookies", exact: true })).toBeVisible();
   expect(requests).toEqual([]);
-  await page.getByRole("button", { name: "Aceitar opcionais", exact: true }).click();
+  await page.getByRole("button", { name: "Aceitar cookies", exact: true }).click();
   await expect(page.locator("#bm-gtm")).toHaveCount(1);
   await expect(page.locator("#bm-meta-pixel")).toHaveCount(1);
   expect(requests.filter(url => external.test(url))).toHaveLength(2);

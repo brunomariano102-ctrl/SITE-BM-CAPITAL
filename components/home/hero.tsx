@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { preDiagnosisCallToAction } from "../../lib/brand";
 
 export function Hero() {
   return (
@@ -18,7 +19,7 @@ export function Hero() {
           </p>
           <div className="actions">
             <a className="btn" href="#contato">
-              Solicitar Diagnóstico BM ↗
+              {preDiagnosisCallToAction}
             </a>
             <a className="btn btn-outline" href="#metodo">
               Conheça nosso método

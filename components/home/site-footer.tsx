@@ -1,8 +1,10 @@
+import { BrandLogo } from "../brand-logo";
+
 export function SiteFooter() {
   return (
     <footer className="footer">
       <div className="wrap footrow">
-        <img src="/assets/bm-capital-logo-transparente.png" alt="BM Capital" />
+        <BrandLogo lazy />
         <div>
           © 2026 BM Capital · Soluções Financeiras Inteligentes
           <br />

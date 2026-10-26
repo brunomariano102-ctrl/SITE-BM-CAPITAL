@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { BrandLogo } from "../brand-logo";
+import { preDiagnosisCallToAction } from "../../lib/brand";
 
 const navigation = [
   ["sobre", "A BM Capital"],
@@ -10,9 +12,10 @@ const navigation = [
   ["contato", "Contato"],
 ] as const;
 
-export function SiteHeader() {
+export function SiteHeader({ home = true }: { home?: boolean }) {
   const [open, setOpen] = useState(false);
   const button = useRef<HTMLButtonElement>(null);
+  const sectionHref = (id: string) => `${home ? "" : "/"}#${id}`;
 
   useEffect(() => {
     if (!open) return;
@@ -37,21 +40,17 @@ export function SiteHeader() {
   return (
     <header className="top">
       <div className="wrap nav">
-        <a href="#inicio" aria-label="BM Capital início">
-          <img
-            className="brand"
-            src="/assets/bm-capital-logo-transparente.png"
-            alt="BM Capital"
-          />
+        <a href={sectionHref("inicio")} aria-label="BM Capital início">
+          <BrandLogo className="brand" />
         </a>
         <nav className="navlinks" aria-label="Navegação principal">
           {navigation.map(([id, label]) => (
-            <a key={id} href={`#${id}`}>
+            <a key={id} href={sectionHref(id)}>
               {label}
             </a>
           ))}
-          <a className="btn btn-outline" href="#contato">
-            Solicitar diagnóstico
+          <a className="btn btn-outline" href={sectionHref("contato")}>
+            {preDiagnosisCallToAction}
           </a>
         </nav>
         <button
@@ -73,10 +72,13 @@ export function SiteHeader() {
         aria-label="Navegação mobile"
       >
         {navigation.map(([id, label]) => (
-          <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>
+          <a key={id} href={sectionHref(id)} onClick={() => setOpen(false)}>
             {label}
           </a>
         ))}
+        <a className="mobile-cta" href={sectionHref("contato")} onClick={() => setOpen(false)}>
+          {preDiagnosisCallToAction}
+        </a>
       </nav>
     </header>
   );

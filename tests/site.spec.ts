@@ -52,7 +52,7 @@ for (const [slug, title] of solutions) {
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(title);
     await expect(page).toHaveTitle(`${title} | BM Capital`);
     await expect(page.locator("main li")).toHaveCount(3);
-    await page.getByRole("link", { name: "Solicitar Diagnóstico BM" }).click();
+    await page.locator(".detail-actions").getByRole("link", { name: "Solicitar pré-diagnóstico BM", exact: true }).click();
     await expect(page).toHaveURL(/\/#contato$/);
     await expect(page.locator("#leadForm")).toBeVisible();
     expect(errors).toEqual([]);
@@ -84,13 +84,10 @@ test("home: navegação, cinco soluções e ativos institucionais", async ({
     await expect(page).toHaveURL(new RegExp(`/solucoes/${slug}$`));
     await page.getByRole("link", { name: "← Voltar à BM Capital" }).click();
   }
-  expect(
-    await page
-      .locator("img")
-      .evaluateAll((images) =>
-        images.every((img) => img instanceof HTMLImageElement && img.complete && img.naturalWidth > 0),
-      ),
-  ).toBe(true);
+  for (const image of await page.locator("img").all()) {
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate(img => img instanceof HTMLImageElement && img.complete && img.naturalWidth > 0)).toBe(true);
+  }
   await expect(
     page.locator('a[href="https://www.instagram.com/solucoesbmcapital/"]'),
   ).toHaveAttribute("rel", "noopener noreferrer");
@@ -296,7 +293,7 @@ test("menu mobile: abre, fecha por link/Escape e não captura Escape fora do men
   await expect(button).toHaveAttribute("aria-expanded", "false");
   await expect(button).toBeFocused();
   await button.click();
-  await page.locator('#mobileMenu a[href="#contato"]').click();
+  await page.getByRole("navigation", { name: "Navegação mobile", exact: true }).getByRole("link", { name: "Contato", exact: true }).click();
   await expect(button).toHaveAttribute("aria-expanded", "false");
   await expect(page.locator("#mobileMenu")).toBeHidden();
   await page.locator("#name").focus();
