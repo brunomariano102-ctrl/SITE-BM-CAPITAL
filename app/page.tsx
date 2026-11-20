@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AboutSection } from "../components/home/about-section";
+import { FoundersSection } from "../components/home/founders-section";
 import { ContactSection } from "../components/home/contact-section";
 import { DiagnosisProvider } from "../components/home/diagnosis-provider";
 import { FaqSection } from "../components/home/faq-section";
@@ -22,6 +23,7 @@ export default function Home() {
         <SolutionsSection />
         <MethodSection />
         <AboutSection />
+        <FoundersSection />
         <FaqSection />
         <ContactSection />
       </main>
