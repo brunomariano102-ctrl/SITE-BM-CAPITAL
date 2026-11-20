@@ -102,7 +102,7 @@
 .founders-intro { display: grid; grid-template-columns: 1.2fr .8fr; gap: 64px; align-items: center; margin-bottom: 56px; }
 .founders-intro .section-head { margin-bottom: 0; }
 .founders p { font-size: 16px; line-height: 1.8; }
-.founders-together { margin: 0; max-width: 380px; justify-self: end; border-bottom: 3px solid var(--gold); }
+.founders-together { margin: 0; width: 100%; max-width: 380px; justify-self: end; border-bottom: 3px solid var(--gold); }
 .founders-together img, .founder-portrait img { display: block; width: 100%; height: auto; }
 .founders-profiles { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
 .founder-profile { min-width: 0; background: var(--cream); border: 1px solid #e6e1d8; }
