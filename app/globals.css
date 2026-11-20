@@ -96,3 +96,45 @@
 .detail-start .btn-outline:hover { color: var(--cream); }
 @media (max-width: 960px) { .detail-content-grid { grid-template-columns: 1fr; gap: 32px; } }
 @media (max-width: 620px) { .detail-start { padding: 24px; } }
+
+/* Founders: scoped addition; existing sections and contact flow are preserved. */
+.founders { background: #fff; }
+.founders-intro { display: grid; grid-template-columns: 1.2fr .8fr; gap: 64px; align-items: center; margin-bottom: 56px; }
+.founders-intro .section-head { margin-bottom: 0; }
+.founders p { font-size: 16px; line-height: 1.8; }
+.founders-together { margin: 0; width: 100%; max-width: 380px; justify-self: end; border-bottom: 3px solid var(--gold); }
+.founders-together img, .founder-portrait img { display: block; width: 100%; height: auto; }
+.founders-profiles { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.founder-profile { min-width: 0; background: var(--cream); border: 1px solid #e6e1d8; }
+.founder-portrait { margin: 0 auto; max-width: 380px; }
+.founder-copy { padding: 30px; }
+.founder-copy h3 { font: normal 32px/1.25 Georgia,serif; margin: 0 0 8px; }
+.founder-copy p { color: var(--muted); }
+.founder-copy .founder-role { color: var(--gold-text); margin: 0 0 24px; font-weight: 700; }
+.founder-qualifications { border-top: 1px solid #d8cbb4; margin-top: 28px; padding-top: 24px; }
+.founder-credentials-heading { display: flex; gap: 20px; align-items: center; }
+.founder-credentials-heading img { width: 96px; height: 96px; flex: none; object-fit: contain; }
+.founder-credentials-heading h4 { font: normal 23px/1.4 Georgia,serif; margin: 0; }
+.founder-certifications { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0; margin: 24px 0 0; list-style: none; }
+.founder-certifications li { min-width: 0; padding: 18px; background: #fff; border: 1px solid #e6e1d8; }
+.certification-institution { font-size: 14px; color: var(--gold-text); font-weight: 700; }
+.founder-certifications h5 { font-size: 16px; line-height: 1.5; margin: 10px 0; }
+.founder-certifications p { font-size: 14px; margin: 0; }
+.founders-contact { border-top: 1px solid #d8cbb4; margin-top: 48px; padding-top: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.founders-contact p { font: normal 26px/1.5 Georgia,serif; max-width: 620px; margin: 0; }
+.founders-contact p span { color: var(--gold-text); }
+.founders-contact .btn { font-size: 14px; text-align: center; flex: none; }
+@media (max-width: 960px) {
+  .founders-intro { grid-template-columns: 1fr; gap: 28px; }
+  .founders-together { justify-self: start; max-width: 420px; }
+  .founders-profiles { grid-template-columns: 1fr; }
+  .founder-portrait { max-width: 420px; }
+  .founders-contact { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 620px) {
+  .founder-copy { padding: 24px; }
+  .founder-certifications { grid-template-columns: 1fr; }
+  .founder-credentials-heading { gap: 14px; }
+  .founder-credentials-heading img { width: 80px; height: 80px; }
+  .founder-credentials-heading h4 { font-size: 21px; }
+}
