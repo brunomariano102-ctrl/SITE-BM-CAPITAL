@@ -69,8 +69,8 @@ export function FoundersSection() {
             <div className="founder-copy">
               <h3 id="thalita-titulo">Thalita Sena</h3>
               <p className="founder-role">Cofundadora da BM Capital</p>
-              <p>Thalita Sena é cofundadora da BM Capital e atua na gestão administrativa da empresa. Ao lado de Bruno Mariano, fundou a BM Capital com o propósito de aproximar soluções financeiras e patrimoniais dos objetivos de pessoas, famílias e negócios.</p>
-              <p>Seu trabalho conecta o planejamento à execução. É assim que ela dá estrutura à operação e prepara a BM Capital para crescer de forma organizada.</p>
+              <p>Thalita Sena é cofundadora da BM Capital e atua na gestão administrativa da empresa. Fisioterapeuta de carreira, consolidou sua atuação como profissional autônoma, conciliando o cuidado com os pacientes e a gestão do próprio trabalho.</p>
+              <p>Ao lado de Bruno Mariano, fundou a BM Capital com o propósito de aproximar soluções financeiras e patrimoniais dos objetivos de pessoas, famílias e negócios. Hoje, Thalita leva essa experiência empreendedora para a gestão da BM Capital, onde transforma o planejamento em ações do dia a dia e organiza a operação para sustentar o crescimento da empresa.</p>
             </div>
           </article>
         </div>
