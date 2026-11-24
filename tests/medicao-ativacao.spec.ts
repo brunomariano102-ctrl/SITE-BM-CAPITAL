@@ -24,6 +24,43 @@ async function fill(page: Page) {
 }
 async function layer(page: Page) { return page.evaluate(() => window.dataLayer || []); }
 
+for (const campaignName of ["bm_consorcios_01", "lancamento_trafego", "nao_autorizada", ""]) {
+  test(`atribuição padrão usa somente campanha autorizada: ${campaignName || "ausente"}`, async ({ page }) => {
+    test.skip(!active, "Requer build interceptado de medição.");
+    await intercept(page);
+    await page.goto(`/?utm_source=facebook&utm_medium=paid_social&utm_campaign=${campaignName}&email=segredo%40example.test#segredo`);
+    expect(await layer(page)).toEqual([]);
+    await page.getByRole("button", { name: "Gerenciar cookies", exact: true }).click();
+    await page.getByRole("dialog").getByRole("checkbox", { name: /Análise de visitas/ }).check();
+    await page.getByRole("button", { name: "Salvar preferências" }).click();
+    await expect(page.locator("#bm-gtm")).toHaveCount(1);
+    await expect(page).toHaveURL("/");
+    const events = (await layer(page) as Array<Record<string, unknown>>).filter(e => e.event === "bm_page_view");
+    expect(events).toHaveLength(1);
+    const valid = ["bm_consorcios_01", "lancamento_trafego"].includes(campaignName);
+    expect(events[0].bm_campaign_source).toBe(valid ? "facebook" : undefined);
+    expect(events[0].bm_campaign_medium).toBe(valid ? "paid_social" : undefined);
+    expect(events[0].bm_campaign_name).toBe(valid ? campaignName : undefined);
+    expect(events[0].bm_campaign).toBe(valid ? campaignName : "none");
+    expect(JSON.stringify(await layer(page))).not.toMatch(/segredo|example|email=/);
+  });
+}
+
+test("origem ou mídia não reconhecida não cria atribuição padrão", async ({ page }) => {
+  test.skip(!active, "Requer build interceptado de medição.");
+  await intercept(page);
+  for (const tuple of ["utm_source=arbitraria&utm_medium=paid_social", "utm_source=facebook&utm_medium=arbitraria"]) {
+    await page.goto(`/?${tuple}&utm_campaign=lancamento_trafego`);
+    if (await page.getByRole("button", { name: "Aceitar cookies", exact: true }).isVisible())
+      await page.getByRole("button", { name: "Aceitar cookies", exact: true }).click();
+    await expect.poll(async () => (await layer(page) as Array<Record<string, unknown>>).filter(e => e.event === "bm_page_view").length).toBe(1);
+    const event = (await layer(page) as Array<Record<string, unknown>>).find(e => e.event === "bm_page_view")!;
+    expect(event.bm_campaign_source).toBeUndefined();
+    expect(event.bm_campaign_medium).toBeUndefined();
+    expect(event.bm_campaign_name).toBeUndefined();
+  }
+});
+
 test("Pixel geral cobre Home e todas as soluções, preserva consentimento e exclui rotas inválidas", async ({ page }) => {
   test.skip(!active, "Requer build de medição com IDs fictícios e interceptação.");
   const requests = await intercept(page);

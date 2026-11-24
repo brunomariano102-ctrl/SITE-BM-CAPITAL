@@ -36,10 +36,11 @@ function prepareUrl() {
     const query = new URLSearchParams(location.search);
     const source = query.get("utm_source");
     const medium = query.get("utm_medium");
+    const campaign = query.get("utm_campaign");
     attribution = {
       source: source && ["instagram", "facebook", "google", "whatsapp"].includes(source) ? source : "other",
       medium: medium && ["paid_social", "cpc", "organic", "referral"].includes(medium) ? medium : "other",
-      campaign: query.get("utm_campaign") === "bm_consorcios_01" ? "bm_consorcios_01" : "none",
+      campaign: campaign && ["bm_consorcios_01", "lancamento_trafego"].includes(campaign) ? campaign : "none",
     };
   }
   // Vendor scripts may read the browser URL automatically. Remove query/hash first.
@@ -99,11 +100,17 @@ export function trackEvent(event: MeasurementEvent) {
   const p = readPreferences();
   if (!p || (!p.analytics && !p.advertising)) return;
   prepareUrl();
+  // Only a complete allowlisted tuple may override GA4 acquisition. Undefined
+  // clears stale layer values without inventing campaign attribution for direct visits.
+  const campaign = p.analytics && attribution && attribution.source !== "other" &&
+    attribution.medium !== "other" && attribution.campaign !== "none" ? attribution : undefined;
   const payload = { event, bm_analytics: p.analytics, bm_advertising: p.advertising,
     bm_page_path: location.pathname, bm_page_location: `${origin}${location.pathname}`,
     bm_page_referrer: "", bm_page_title: location.pathname === campaignPath ? "Consórcios | BM Capital" : "BM Capital",
     bm_source: attribution?.source || "other", bm_medium: attribution?.medium || "other",
-    bm_campaign: attribution?.campaign || "none" };
+    bm_campaign: attribution?.campaign || "none",
+    bm_campaign_source: campaign?.source, bm_campaign_medium: campaign?.medium,
+    bm_campaign_name: campaign?.campaign };
   window.dataLayer ||= [];
   window.dataLayer.push(payload);
   if (p.advertising && window.fbq && /^\d{8,20}$/.test(pixelId)) {
