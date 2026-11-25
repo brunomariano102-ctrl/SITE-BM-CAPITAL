@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { preDiagnosisCallToAction } from "../../lib/brand";
+import { WHATSAPP_NUMBER } from "../../lib/whatsapp";
 
 export function Hero() {
   return (
@@ -20,6 +21,9 @@ export function Hero() {
           <div className="actions">
             <a className="btn" href="#contato">
               {preDiagnosisCallToAction}
+            </a>
+            <a className="btn btn-outline" href={`https://wa.me/${WHATSAPP_NUMBER}`} rel="noreferrer">
+              Fale com a BM pelo WhatsApp
             </a>
             <a className="btn btn-outline" href="#metodo">
               Conheça nosso método
