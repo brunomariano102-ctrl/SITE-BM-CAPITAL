@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { preDiagnosisCallToAction } from "../../lib/brand";
 
+const callbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdz3y92MFFlK4-EQdP0G2uv6RYnpmqxwFqPnVi1Db795gDKpQ/viewform";
+
 export function Hero() {
   return (
     <div className="hero" id="inicio">
@@ -29,6 +31,18 @@ export function Hero() {
             </a>
           </div>
           <p id="hero-whatsapp-flow">Preencha o pré-diagnóstico e continue o atendimento com a BM pelo WhatsApp.</p>
+          <details className="form" style={{ marginBlockStart: 24 }}>
+            <summary style={{ cursor: "pointer", fontWeight: 700 }}>Quero que a BM me chame</summary>
+            <p>Deixe nome, e-mail e telefone para nossa equipe retornar seu pedido de atendimento.</p>
+            <iframe
+              title="Formulário de pedido de retorno da BM Capital"
+              src={`${callbackFormUrl}?embedded=true`}
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              style={{ display: "block", border: 0, width: "100%", height: 720, borderRadius: 8, background: "#fff" }}
+            />
+            <p><a href={callbackFormUrl} target="_blank" rel="noopener noreferrer">Abrir formulário em outra aba</a></p>
+          </details>
         </div>
         <figure className="hero-visual">
           <Image
