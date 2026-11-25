@@ -62,12 +62,17 @@ export default function Privacidade() {
       </p>
       <p>
         Ao se inscrever para receber o checklist gratuito, você informa seu
-        nome, e-mail e telefone ou WhatsApp. Com o aceite específico, a BM
-        Capital usa o cadastro para enviar o checklist ao e-mail informado.
+        nome, e-mail e telefone ou WhatsApp. A BM Capital envia o checklist ao
+        e-mail informado e, com a autorização de contato do formulário, pode
+        usar os canais informados para entrar em contato com você após a inscrição.
         As respostas são processadas e armazenadas pelo Google Formulários na
-        conta institucional da BM Capital, com acesso restrito. O cadastro não
-        autoriza contato comercial e seus campos não são enviados ao Meta Pixel
-        ou ao Google Analytics.
+        conta institucional da BM Capital, com acesso restrito. Os campos do
+        cadastro não são enviados ao Meta Pixel ou ao Google Analytics.
+      </p>
+      <p>
+        Para inscrições recebidas com o aceite anterior, a finalidade
+        informada foi o envio do checklist. Você pode retirar a autorização
+        de contato pelo e-mail indicado na seção de direitos dos titulares.
       </p>
       <h2>3. Bases legais</h2>
       <p>
