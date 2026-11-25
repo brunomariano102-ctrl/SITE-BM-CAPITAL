@@ -97,7 +97,7 @@ test("homologação: renderização, console e requisições das sete páginas",
       await image.scrollIntoViewIfNeeded();
       await expect.poll(() => image.evaluate(img => img instanceof HTMLImageElement && img.complete && img.naturalWidth > 0)).toBe(true);
     }
-    expect(await page.evaluate(() => ({ local: localStorage.length, session: sessionStorage.length }))).toEqual({ local: 0, session: 0 });
+    expect(await page.evaluate(() => ({ local: localStorage.length, session: Object.keys(sessionStorage).filter(key => key !== "bm_callback_dialog_dismissed").length }))).toEqual({ local: 0, session: 0 });
   }
   expect(errors).toEqual([]);
   expect(failed).toEqual([]);

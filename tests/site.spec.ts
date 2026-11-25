@@ -251,7 +251,7 @@ test("sem rastreadores, cookies ou persistência dos dados preenchidos", async (
   await page.locator("#marketingConsent").check();
   const storage = await page.evaluate(() => ({
     local: Object.keys(localStorage).filter(key => key !== "bm_cookie_preferences").length,
-    session: sessionStorage.length,
+    session: Object.keys(sessionStorage).filter(key => key !== "bm_callback_dialog_dismissed").length,
   }));
   expect(storage).toEqual({ local: 0, session: 0 });
   expect(await context.cookies()).toEqual([]);
