@@ -50,6 +50,16 @@ export default function Privacidade() {
         solicitação, realizar o diagnóstico consultivo e dar continuidade às
         providências que você pedir.
       </p>
+      <p>
+        Se você solicitar um retorno pelo formulário no topo do site, a BM Capital
+        recebe o nome, e-mail e telefone que você enviar. A equipe autorizada
+        usa esses dados para responder ao seu pedido, inclusive por telefone,
+        WhatsApp ou e-mail. O Google Formulários processa e armazena as respostas
+        na conta institucional da BM Capital, com acesso restrito. O pedido de
+        retorno independe do envio de mensagem pelo WhatsApp e não autoriza
+        comunicações promocionais. Os campos do pedido de retorno não são
+        enviados ao Meta Pixel ou ao Google Analytics.
+      </p>
       <h2>3. Bases legais</h2>
       <p>
         O atendimento solicitado poderá envolver procedimentos preliminares
@@ -79,7 +89,7 @@ export default function Privacidade() {
       </p>
       <h2>5. Armazenamento e retenção</h2>
       <p>
-        Os dados preenchidos neste formulário não são enviados a um backend de
+        Os dados preenchidos no formulário de pré-diagnóstico não são enviados a um backend de
         captação de leads da BM Capital nem gravados pelo formulário em um
         histórico de consentimentos. Se você enviar a mensagem no WhatsApp, as
         informações poderão integrar o histórico de atendimento. O controle
