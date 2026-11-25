@@ -59,9 +59,6 @@ export function CallbackDialog() {
           )}
           <footer className={styles.footer}>
             <a href={formUrl} target="_blank" rel="noopener noreferrer">Abrir em outra aba</a>
-            <form method="dialog">
-              <button type="submit" className={styles.continue}>Continuar no site</button>
-            </form>
           </footer>
         </div>
       </dialog>

@@ -93,17 +93,6 @@
   text-decoration: underline;
 }
 
-.continue {
-  min-height: 44px;
-  padding: 0 12px;
-  border: 0;
-  border-radius: 6px;
-  color: #fff;
-  background: #0e2033;
-  cursor: pointer;
-  font: 600 14px Arial, sans-serif;
-}
-
 @media (max-width: 520px) {
   .dialog .header {
     padding: 4px 8px 4px 12px;
