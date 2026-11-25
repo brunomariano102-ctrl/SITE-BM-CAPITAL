@@ -42,22 +42,28 @@ export function CallbackDialog() {
         Quero meu checklist
       </button>
       <dialog ref={dialog} className={styles.dialog} aria-labelledby="callback-dialog-title" onClose={handleClose}>
-        <header className={styles.header}>
-          <h2 id="callback-dialog-title">Checklist gratuito da BM Capital</h2>
-          <form method="dialog">
-            <button type="submit" autoFocus aria-label="Fechar cadastro" className={styles.close}>×</button>
-          </form>
-        </header>
-        {open && (
-          <div className={styles.content}>
+        <div className={styles.layout}>
+          <header className={styles.header}>
+            <h2 id="callback-dialog-title">Checklist gratuito da BM Capital</h2>
+            <form method="dialog">
+              <button type="submit" autoFocus aria-label="Fechar cadastro" className={styles.close}>×</button>
+            </form>
+          </header>
+          {open && (
             <iframe
+              className={styles.content}
               title="Inscrição para receber o checklist gratuito"
               src={`${formUrl}?embedded=true&hl=pt-BR`}
               referrerPolicy="no-referrer"
             />
-            <a href={formUrl} target="_blank" rel="noopener noreferrer">Abrir inscrição em outra aba</a>
-          </div>
-        )}
+          )}
+          <footer className={styles.footer}>
+            <a href={formUrl} target="_blank" rel="noopener noreferrer">Abrir em outra aba</a>
+            <form method="dialog">
+              <button type="submit" className={styles.continue}>Continuar no site</button>
+            </form>
+          </footer>
+        </div>
       </dialog>
     </>
   );
