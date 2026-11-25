@@ -6,6 +6,7 @@ import { PRIVACY_NOTICE_VERSION } from "../lib/whatsapp";
 // Dedicated consent tests exercise the untouched first visit and every choice.
 test.beforeEach(async ({ page }) => {
   await page.addInitScript((version) => {
+    sessionStorage.setItem("bm_callback_dialog_dismissed", "1");
     localStorage.setItem("bm_cookie_preferences", JSON.stringify({ version, analytics: false, advertising: false, savedAt: Date.now() }));
   }, CONSENT_VERSION);
 });

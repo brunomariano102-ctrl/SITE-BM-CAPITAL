@@ -1,5 +1,9 @@
 import { expect, test } from "@playwright/test";
 
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => sessionStorage.setItem("bm_callback_dialog_dismissed", "1"));
+});
+
 const pages = ["/", "/privacidade", ...["consorcios", "credito", "seguros", "investimentos", "planejamento"].map(slug => `/solucoes/${slug}`)];
 
 test("homologação: todos os links internos e âncoras possuem destino", async ({ page, request }) => {

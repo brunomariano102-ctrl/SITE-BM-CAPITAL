@@ -51,7 +51,7 @@ export default function Privacidade() {
         providências que você pedir.
       </p>
       <p>
-        Se você solicitar um retorno pelo formulário no topo do site, a BM Capital
+        Se você solicitou um retorno pelo formulário anteriormente disponível no topo do site, a BM Capital
         recebe o nome, e-mail e telefone que você enviar. A equipe autorizada
         usa esses dados para responder ao seu pedido, inclusive por telefone,
         WhatsApp ou e-mail. O Google Formulários processa e armazena as respostas
@@ -59,6 +59,15 @@ export default function Privacidade() {
         retorno independe do envio de mensagem pelo WhatsApp e não autoriza
         comunicações promocionais. Os campos do pedido de retorno não são
         enviados ao Meta Pixel ou ao Google Analytics.
+      </p>
+      <p>
+        Ao se inscrever para receber o checklist gratuito, você informa seu
+        nome, e-mail e telefone ou WhatsApp. Com o aceite específico, a BM
+        Capital usa o cadastro para enviar o checklist ao e-mail informado.
+        As respostas são processadas e armazenadas pelo Google Formulários na
+        conta institucional da BM Capital, com acesso restrito. O cadastro não
+        autoriza contato comercial e seus campos não são enviados ao Meta Pixel
+        ou ao Google Analytics.
       </p>
       <h2>3. Bases legais</h2>
       <p>
